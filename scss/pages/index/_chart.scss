@@ -1,0 +1,240 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// chart section
+
+.chart {
+    background: $primary;
+    padding: 60px 0;
+
+    &_shapes {
+        display: none;
+    }
+
+    &_header {
+        text-align: center;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+
+    &_slider {
+
+        &-nav {
+            margin-top: 30px;
+        }
+
+        &-controls {
+            display: none;
+        }
+
+        .swiper-slide {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .slide {
+                width: 100%;
+                max-width: 270px;
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 575.98px) {
+    .chart {
+        &_slider {
+            position: relative;
+
+            &-controls {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100%;
+                color: #fff;
+                font-size: 34px;
+                z-index: 10;
+
+                .control {
+                    &:hover {
+                        color: $accent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .chart {
+        padding: 100px 0 150px;
+
+        &_header {
+            margin-bottom: 40px;
+        }
+
+        &_slider {
+            max-width: 920px;
+
+            .swiper-slide {
+                width: calc(100% / 3);
+                transition: .4s ease-in-out;
+
+                &:not(.swiper-slide-visible) {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .chart {
+        padding: 120px 0 130px;
+        position: relative;
+
+        &_shapes {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+
+            .group {
+                position: absolute;
+
+                &--left {
+                    max-width: 300px;
+                    bottom: -150px;
+                    left: -70px;
+
+                    .circle {
+                        position: absolute;
+                        max-width: 30px;
+                        top: 90px;
+                        right: 0;
+
+                        &--big {
+                            border-radius: 50%;
+                            width: 120px;
+                            max-width: unset;
+                            height: 120px;
+                            border: 1px solid #fff;
+                            top: -171px;
+                            right: 28px;
+                            opacity: .9;
+                        }
+                    }
+                }
+
+                &--right {
+                    top: 0;
+                    right: -70px;
+                    max-width: 400px;
+
+                    .circle {
+                        position: absolute;
+                        top: 40px;
+                        right: 350px;
+                        max-width: 40px;
+                    }
+
+                    .shape {
+                        max-width: 400px;
+                        transform: rotate(40deg);
+                        top: 400px;
+                        position: relative;
+                        &--rotate {
+                            transform: rotate(-20deg);
+                            right: -85px;
+                            position: absolute;
+                            top: -40px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        &_header {
+            margin-bottom: 50px;
+        }
+
+        &_slider {
+            .swiper-slide {
+                width: calc(100% / 5);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .chart {
+        &_shapes {
+            .group {
+                &--left {
+                    .circle {
+                        &--big {
+                            top: -319px;
+                            right: 38px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1399.98px) {
+    .chart {
+        &_shapes {
+            .group {
+                &--left {
+                    max-width: 450px;
+
+                    .circle:not(.circle--big) {
+                        top: 290px;
+                        right: 83px;
+                    }
+                }
+
+                &--right {
+                    max-width: 500px;
+
+                    .circle {
+                        right: 550px;
+                    }
+
+                    .shape {
+                        max-width: 500px;
+                        right: -190px;
+                        &--rotate {
+                            right: -135px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

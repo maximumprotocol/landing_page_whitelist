@@ -1,0 +1,178 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// model section
+
+.model {
+    padding: 60px 0;
+
+    &_header {
+        margin-bottom: 40px;
+
+        &-subtitle {
+            margin: 10px 0;
+            color: #595B5E;
+            font-weight: 700;
+        }
+
+        &-text {
+            margin-bottom: 30px;
+        }
+    }
+
+    &_table {
+        border: 1px solid #DCDCDC;
+
+        &-header {
+            display: none;
+        }
+
+        .cell {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            &--trigger {
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-between;
+                font-family: $headerFont;
+                color: $primary;
+                font-weight: 700;
+                padding: 15px 20px;
+
+                .icon {
+                    transition: .4s ease-in-out;
+                    transform: rotate(-90deg);
+                }
+
+                &[aria-expanded="true"] {
+                    .icon {
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+
+            &-label, &-content {
+                padding: 15px 20px;
+                background: $lightgray;
+            }
+
+            &-label {
+                font-weight: 700;
+                border-bottom: 2px solid #fff;
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 575.98px) {
+    .model {
+        &_header {
+            &-btn {
+                width: 225px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .model {
+        padding: 100px 0;
+
+        &_table {
+            &-header {
+                display: flex;
+
+                &_label {
+                    width: calc(100% / 3);
+                    color: $primary;
+                    padding: 25px 15px;
+                    font-size: 16px;
+                }
+            }
+
+            &-col {
+                display: flex;
+                width: 100%;
+
+                &:nth-of-type(odd) {
+                    * {
+                        background: #fff;
+                    }
+                }
+
+                &:nth-of-type(even) {
+                    background: $lightgray;
+                }
+
+                .cell {
+                    width: 50%;
+                    border-right: 2px solid #fff;
+
+                    &:last-of-type {
+                        border: none;
+                    }
+
+                    &--trigger {
+                        width: calc(100% / 3);
+                        color: $bodyText;
+                        padding: 15px;
+                        border-right: 2px solid #fff !important;
+
+                        .icon {
+                            display: none;
+                        }
+                    }
+
+                    &-label {
+                        display: none;
+                    }
+
+                    &-content {
+                        flex-grow: 1;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        padding: 15px 25px 15px 15px;
+                    }
+
+                    &-collapse {
+                        display: flex;
+                        flex-grow: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .model {
+        padding: 120px 0;
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .model {
+        &_header {
+            max-width: 430px;
+            margin-bottom: 0;
+        }
+        &_table {
+            flex-grow: 1;
+            margin-left: 35px;
+        }
+    }
+}

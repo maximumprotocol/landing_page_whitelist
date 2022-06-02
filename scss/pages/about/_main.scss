@@ -1,0 +1,241 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// about page main content
+
+.page {
+    background: $primary;
+    padding: 20px 0 60px;
+    color: #fff;
+
+    &_shapes {
+        display: none;
+    }
+
+    &_header {
+        position: relative;
+        margin-top: 63px;
+
+        .tw-height {
+            &:before {
+                content: '';
+                @include caret;
+                top: -33px;
+                left: 0;
+            }
+        }
+
+        &-title, &-subtitle {
+            color: #fff;
+        }
+
+        &-subtitle {
+            margin-top: 20px;
+            max-width: 540px;
+        }
+    }
+
+    &_slider {
+        margin: -5px;
+        padding: 5px;
+
+        &-controls {
+            margin: 30px 0;
+            font-size: 24px;
+
+            .control {
+                &:first-of-type {
+                    margin-right: 30px;
+                }
+
+                &:hover, &:focus {
+                    color: $accent;
+                }
+            }
+        }
+
+        .swiper-slide {
+            height: 200px;
+            box-shadow: $shadow;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+}
+
+.services {
+    padding: 60px 0;
+
+    &_content {
+        &-numbers {
+            gap: 20px 0;
+
+            .block {
+                display: flex;
+                flex-direction: column;
+                gap: 10px 0;
+
+                .countNum {
+                    color: $primary;
+                }
+            }
+        }
+
+        &-video {
+            height: 320px;
+            margin: 60px 0;
+        }
+    }
+
+    &_list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px 0;
+    }
+}
+
+.feedback {
+    background: $lightgray;
+}
+
+// media queries
+@media screen and (min-width: 575.98px) {
+    .page {
+        &_slider {
+            .swiper-slide {
+                height: 350px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .page {
+        padding: 20px 0 100px;
+        position: relative;
+
+        &_slider {
+            margin-top: 40px;
+
+            &-controls {
+                position: absolute;
+                padding: 0 30px;
+                bottom: 40px;
+                left: 50%;
+                max-width: 1105px;
+                width: 100%;
+                margin: 0;
+                transform: translateX(-50%);
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .swiper-slide {
+                height: 300px;
+            }
+        }
+    }
+    .services {
+        padding: 80px 0 100px;
+
+        &_list {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+
+            .wrapper {
+                width: calc(50% - 20px);
+            }
+
+            &-item {
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .page {
+        padding: 20px 0 160px;
+
+        &_slider {
+            margin-top: 50px;
+
+            &-controls {
+                bottom: 80px;
+            }
+        }
+    }
+    .services {
+        padding: 120px 0;
+
+        &_content {
+            margin-bottom: 110px;
+
+            &-video {
+                margin: 0 0 0 90px;
+                max-width: 540px;
+                flex-grow: 1;
+            }
+
+            &-numbers {
+                width: calc(100% - 540px - 90px);
+            }
+        }
+
+        &_list {
+            gap: 50px;
+
+            .wrapper {
+                width: calc(50% - 25px);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .page {
+        &_slider {
+            &-controls {
+                padding: 0;
+            }
+        }
+    }
+    .services {
+        &_content {
+            &-numbers {
+                .block {
+                    width: 200px;
+
+                    &:nth-of-type(even) {
+                        align-self: flex-end;
+                    }
+                }
+            }
+        }
+
+        &_list {
+            gap: 0;
+            flex-wrap: nowrap;
+
+            .wrapper {
+                width: 25%;
+            }
+
+            &-item {
+                padding-right: 10px;
+            }
+        }
+    }
+}

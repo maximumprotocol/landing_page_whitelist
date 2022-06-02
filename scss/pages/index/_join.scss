@@ -1,0 +1,104 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// join section
+
+// media queries
+
+@media screen and (min-width: 1199.98px) {
+    .join {
+        &_media {
+            img {
+                position: absolute;
+            }
+
+            &-left {
+                width: 500px;
+                left: -25%;
+                top: 80px;
+            }
+
+            .group {
+                width: 476px;
+                height: 494px;
+                position: absolute;
+                right: -29%;
+                top: 139px;
+
+                .shape {
+                    width: 476px;
+                    height: 494px;
+                }
+
+                .speaker {
+                    width: 350px;
+                    height: 366px;
+                    top: 0;
+                    left: -114px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1399.98px) {
+    .join {
+        overflow: visible;
+
+        &_media {
+            &-left {
+                width: 550px;
+                left: -15%;
+                top: 135px;
+                z-index: 10;
+            }
+
+            .group {
+                right: -18%;
+                top: 150px;
+
+                .shape {
+                    width: unset;
+                    height: unset;
+                }
+
+                .speaker {
+                    top: 250px;
+                    left: -165px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1599.98px) {
+    .join {
+        &_media {
+            &-left {
+                width: auto;
+                height: 555px;
+                left: -3%;
+                top: 146px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1999.98px) {
+    .join {
+        &_media {
+            .group {
+                right: -14%;
+            }
+        }
+    }
+}

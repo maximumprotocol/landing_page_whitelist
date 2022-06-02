@@ -1,0 +1,106 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// recent post section component
+
+.recent {
+    padding: 60px 0;
+
+    &_controls {
+        margin-top: 5px;
+        font-size: 24px;
+
+        &-control {
+            &:first-of-type {
+                margin-right: 30px;
+            }
+
+            &:hover {
+                color: $accent;
+            }
+        }
+    }
+
+    &_header {
+        position: relative;
+        margin-bottom: 40px;
+
+        .tw-height {
+            margin-bottom: 40px;
+            padding-bottom: 23px;
+
+            &:before {
+                content: '';
+                left: 0;
+                @include caret;
+                bottom: 0;
+            }
+        }
+
+        &:after {
+            content: '';
+            left: 0;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: $headerColor;
+            bottom: 0;
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 767.98px) {
+    .recent {
+        padding: 100px 0;
+
+        &_controls {
+            margin-top: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .recent {
+        padding: 120px 0;
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .recent {
+        &_controls {
+            display: none;
+        }
+
+        &_posts {
+            .swiper-wrapper {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 60px 30px;
+                position: relative;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    height: 2px;
+                    width: 100%;
+                    background: $headerColor;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}

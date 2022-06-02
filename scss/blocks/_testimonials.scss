@@ -1,0 +1,172 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// testimonials section common styles
+
+.testimonials {
+    &_controls {
+        margin: 30px 0 20px;
+        font-size: 24px;
+
+        &-control {
+            &:first-of-type {
+                margin-right: 30px;
+            }
+
+            &:hover {
+                color: $accent;
+            }
+        }
+    }
+
+    &_wrapper {
+        margin: -30px;
+    }
+
+    &_slider {
+        padding: 30px;
+        overflow: hidden;
+        margin-bottom: 60px;
+
+        &-slide {
+            border-radius: 2px;
+            background: #fff;
+            border: $border;
+            box-shadow: $shadow;
+            overflow: visible;
+            position: relative;
+            padding: 30px;
+
+            .doge, .avocado {
+                position: absolute;
+                transition: .4s ease-in-out;
+                opacity: 0;
+            }
+
+            .doge {
+                height: 50px;
+                width: auto;
+                top: -25px;
+                right: 30px;
+            }
+
+            .avocado {
+                width: 72px;
+                height: 91.24px;
+                right: 10px;
+                bottom: -30px;
+            }
+
+            &.swiper-slide-active {
+                .doge, .avocado {
+                    opacity: 1;
+                }
+            }
+
+            .main {
+                &_review {
+                    color: $headerColor;
+                }
+
+                &_author {
+                    margin: 10px 0 5px;
+                }
+
+                &_company {
+                    color: $bodyText;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 26px;
+                    letter-spacing: 0.3px;
+                }
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 575.98px) {
+    .testimonials {
+        &_slider {
+            &-slide {
+                padding: 55px 25px 45px 70px;
+
+                &:before {
+                    content: '“';
+                    position: absolute;
+                    background: $accent;
+                    top: 25px;
+                    left: 25px;
+                    width: 33px;
+                    height: 30px;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 42px;
+                    font-family: $headerFont;
+                    color: $headerColor;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                }
+
+                .doge {
+                    height: 75px;
+                    top: -30px;
+                }
+
+                .main {
+                    &_review {
+                        font-size: 18px;
+                        line-height: 32px;
+                    }
+
+                    &_author {
+                        margin: 5px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .testimonials {
+        &_slider {
+            margin-bottom: 80px;
+        }
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .testimonials {
+        .container {
+            max-width: unset;
+            padding: 0;
+        }
+
+        &_controls {
+            margin-bottom: 0;
+        }
+
+        &_wrapper {
+            margin: 0 0 30px;
+        }
+
+        &_slider {
+            padding: 30px 0;
+            &-slide {
+                width: calc(100% / 3);
+            }
+        }
+    }
+}

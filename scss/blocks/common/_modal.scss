@@ -1,0 +1,251 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// modal (popup) styles
+
+.swal2-container {
+    z-index: 200000;
+}
+
+//--- Sign Up
+.signup {
+
+    &_container {
+        background: #fff;
+
+        .swal2-close {
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            background: #fff;
+            right: 0;
+            top: 20px;
+            border: $border;
+            border-radius: 2px;
+            box-shadow: $shadow;
+            color: $headerColor;
+            font-size: 12px;
+        }
+    }
+
+    &_wrapper {
+        background: $lightgray;
+        border: $border;
+        border-radius: 2px;
+        box-shadow: $shadow;
+        padding: 30px;
+        margin: 60px 0 60px;
+    }
+
+    &_popup {
+        &-shapes {
+            display: none;
+        }
+
+        &-header {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .title {
+                margin-bottom: 15px;
+            }
+
+            .subtitle {
+                display: none;
+                position: relative;
+                align-items: center;
+
+                &:before {
+                    content: '';
+                    width: 22px;
+                    height: 13px;
+                    background: $accent;
+                    display: block;
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        &-list {
+            margin: 20px 0 30px;
+            gap: 10px 0;
+
+            .list-item {
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                color: $headerColor;
+
+                .icon {
+                    font-size: 14px;
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        &-form {
+            gap: 20px 0;
+        }
+    }
+}
+
+// sweet alert 2 toast notification styles
+
+.alert {
+    &_popup {
+        background: #fff;
+        box-shadow: $shadow;
+        border-radius: 2px;
+        min-width: 280px;
+        max-width: 360px;
+        display: flex !important;
+        flex-direction: column;
+        padding: 30px;
+        position: relative;
+        z-index: 12100000;
+        border: $border;
+
+        &-close {
+            justify-content: flex-end;
+            transition: color .3s ease-in-out;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 424.98px) {
+    .signup {
+        &_popup {
+            &-header {
+                .subtitle {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 575.98px) {
+    .signup {
+        &_wrapper {
+            padding: 60px;
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .signup {
+        &_popup {
+            &-list {
+                gap: 0 30px;
+            }
+
+            &-form {
+                max-width: 540px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .signup {
+        &_container {
+            .swal2-close {
+                right: -60px;
+                top: 192px;
+            }
+        }
+
+        &_wrapper {
+            margin: 220px 0 120px;
+            padding: 120px;
+        }
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .signup {
+        &_container {
+            height: 100vh;
+            align-content: center;
+        }
+
+        &_wrapper {
+            min-width: 1105px;
+            position: relative;
+        }
+
+        &_popup {
+
+            &-header, &-list, &-form {
+                position: relative;
+                z-index: 2;
+            }
+
+            &-shapes {
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: 1;
+
+                * {
+                    position: absolute;
+                }
+
+                .speaker {
+                    width: 208px;
+                    height: 219px;
+                    right: -30px;
+                    top: 30px;
+                }
+
+                .group {
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+
+
+                    * {
+                        position: absolute;
+                    }
+
+                    .oval {
+                        width: 56px;
+                        height: 50px;
+                        left: 20px;
+                        bottom: 100px;
+                    }
+
+                    .shape {
+                        width: auto;
+                        height: 352px;
+                        bottom: -180px;
+                        left: -150px;
+                        transform: rotate(-493deg);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,210 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+@keyframes float {
+    0% {
+        transform: translateY(-30px);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+
+// features section
+
+.features {
+    padding-bottom: 60px;
+
+    &_media {
+        height: 360px;
+        margin-bottom: 50px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    &_item {
+        margin-bottom: 30px;
+        position: relative;
+        transition: .4s ease-in-out;
+
+        .title {
+            margin-bottom: 10px;
+        }
+
+        .number {
+            color: $primary;
+        }
+    }
+
+    &_group {
+        position: relative;
+        margin-top: 50px;
+
+        &-bg {
+            position: relative;
+            height: 200px;
+
+            img {
+                height: 100%;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: $primary;
+                opacity: .8;
+            }
+        }
+
+        &-girl {
+            position: absolute;
+            top: 0;
+            left: -5px;
+            max-height: 230px;
+            width: auto;
+            animation: float 10000ms infinite both;
+            animation-timing-function: ease;
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 575.98px) {
+    .features {
+        &_media {
+            height: 450px;
+        }
+
+        &_group {
+            &-bg {
+                height: 350px;
+            }
+
+            &-girl {
+                max-height: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .features {
+        padding-bottom: 100px;
+
+        &_media, &_list {
+            width: 50%;
+        }
+
+        &_media {
+            margin-bottom: 0;
+        }
+
+        &_list {
+            .features_item {
+                margin-left: 40px;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &_group {
+            width: 100%;
+            margin-top: 100px;
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .features {
+        padding-bottom: 120px;
+
+        .container {
+            height: 700px;
+            position: relative;
+        }
+
+        &_media {
+            width: 186px;
+            height: 245px;
+            position: absolute;
+            top: 0;
+            left: 250px;
+        }
+
+        &_item {
+            width: 180px;
+            position: absolute;
+
+            &[data-order="1"] {
+                top: 180px;
+                left: 30px;
+            }
+
+            &[data-order="2"] {
+                top: 0;
+                left: 530px;
+            }
+
+            &[data-order="3"] {
+                bottom: 10px;
+                left: 150px;
+            }
+        }
+
+        &_group {
+            margin-right: 0;
+            position: absolute;
+            bottom: 0;
+            right: 30px;
+            width: 532px;
+
+            &-bg {
+                width: 532px;
+                height: 356px;
+            }
+
+            &-girl {
+                left: -30px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .features {
+        &_item {
+            &[data-order="1"] {
+                left: 0;
+                top: 280px;
+            }
+            &[data-order="3"] {
+                left: 250px;
+            }
+        }
+        &_group {
+            right: 0;
+        }
+    }
+}

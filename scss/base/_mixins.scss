@@ -1,0 +1,42 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+@mixin font-face($name, $file, $weight, $style: normal) {
+    @font-face {
+        font-family: "#{$name}";
+        src: local("#{$file}"),
+        url('../fonts/#{$file}.woff2') format('woff2'),
+        url('../fonts/#{$file}.woff') format('woff');
+        font-weight: $weight;
+        font-style: $style;
+        font-display: swap;
+    }
+}
+
+@mixin neonEl() {
+    background: $accent;
+    color: $headerColor;
+    border: $border;
+    box-shadow: 3px 3px 0 $accent;
+    border-radius: 2px;
+    &:hover, &:focus {
+        box-shadow: 6px 6px 0 $headerColor;
+    }
+}
+
+@mixin caret() {
+    position: absolute;
+    background: $accent;
+    width: 22px;
+    height: 13px;
+    animation: blink 0.9s infinite both;
+}

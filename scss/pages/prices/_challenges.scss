@@ -1,0 +1,90 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// challenges section
+
+.challenges {
+    background: $lightgray;
+
+    &_header {
+        &-title {
+            color: $primary;
+        }
+    }
+
+    &_list {
+        &-item {
+            .separator {
+                background: $headerColor;
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 1399.98px) {
+    .challenges {
+        &_shapes {
+            .half {
+                .circle {
+                    background: #fff;
+                    border: $border;
+                }
+
+                .shape {
+                    position: absolute;
+                    width: auto;
+                }
+
+                &--left {
+                    .circle {
+                        width: 140px;
+                        height: 140px;
+                        left: -54px;
+                        top: -41px;
+                    }
+
+                    .shape {
+                        max-height: 277px;
+                        bottom: -60px;
+                        left: -30px;
+                    }
+                }
+
+                &--right {
+                    .shape {
+                        max-height: 268px;
+                        right: -30px;
+                        top: -80px;
+                    }
+
+                    .circle {
+                        &--small {
+                            width: 20px;
+                            height: 20px;
+                            top: 90px;
+                            right: 300px;
+                        }
+
+                        &--big {
+                            width: 50px;
+                            height: 50px;
+                            right: 120px;
+                            bottom: 280px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

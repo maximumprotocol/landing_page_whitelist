@@ -1,0 +1,318 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// post article
+
+@keyframes panel {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 5px;
+    }
+}
+
+.page {
+    padding: 20px 0 30px;
+
+    &_header {
+        .wrapper {
+            position: relative;
+            margin-top: 73px;
+
+            &:before {
+                content: '';
+                @include caret;
+                top: -30px;
+                left: 0;
+            }
+        }
+
+        .main_meta {
+            margin-top: 20px;
+        }
+    }
+}
+
+.article {
+    .container--sm {
+        max-width: 725px;
+    }
+
+    &_header {
+        margin: 0 auto 10px;
+    }
+
+    &_text {
+        margin: 0 auto 20px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    &_quote {
+        quotes: none;
+        display: block;
+        background: $lightgray;
+        border: $border;
+        box-shadow: $shadow;
+        padding: 30px;
+        margin: 30px 0;
+    }
+
+    &_progress {
+        margin: 30px 0;
+
+        &-header {
+            margin-bottom: 20px;
+        }
+
+        &-main {
+            gap: 15px 0;
+
+            .block {
+                &_header {
+                    display: flex;
+                    flex-direction: column;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+
+                    .number {
+                        font-family: $bodyFont;
+                        color: $primary;
+                    }
+
+                    .label {
+                        letter-spacing: 0.3px;
+                        font-size: 12px;
+                        line-height: 21px;
+                        color: $headerColor;
+                    }
+
+                    .number, .label {
+                        font-weight: 600;
+                    }
+                }
+
+                &:first-of-type {
+                    .progressLine-legend {
+                        .label {
+                            &:first-of-type {
+                                width: 60%;
+                            }
+                        }
+                    }
+                }
+
+                &:last-of-type {
+                    .progressLine-legend {
+                        .label {
+                            &:first-of-type {
+                                width: 40%;
+                            }
+                        }
+                    }
+                }
+
+                .progressLine {
+                    border: $border;
+                    border-left: none;
+                    display: block;
+                    height: 30px;
+
+                    &-text {
+                        top: -12px !important;
+                        text-align: right;
+                        width: 100%;
+                        font-weight: 600;
+                        font-size: 18px;
+                        color: $primary !important;
+                    }
+
+                    &-legend {
+                        text-align: right;
+                        margin-top: 15px;
+
+                        .label {
+                            font-weight: 600;
+                            font-size: 12px;
+                            line-height: 21px;
+                            letter-spacing: 0.3px;
+                            color: $headerColor;
+
+                            &:last-of-type {
+                                flex-grow: 1;
+                            }
+                        }
+                    }
+
+                    svg {
+                        height: 28px;
+                    }
+                }
+            }
+        }
+    }
+
+    &_tags {
+        margin: 30px auto;
+
+        &-list {
+            gap: 10px;
+        }
+    }
+
+    &_media {
+        img {
+            height: 100%;
+        }
+
+        &--secondary {
+            margin: 30px 0;
+            height: 250px;
+        }
+
+        &--main {
+            position: relative;
+            height: 360px;
+            margin-bottom: 20px;
+            overflow: hidden;
+
+            .share_panel {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 10;
+                background: $lightgray;
+                width: 56px;
+                padding: 25px 0;
+                border: $border;
+                box-shadow: $shadow;
+                text-align: center;
+                animation-play-state: paused;
+                animation: panel 1000ms;
+                right: 5px;
+
+                &-label {
+                    display: block;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 26px;
+                    letter-spacing: 0.3px;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                }
+
+                &-list {
+                    color: $headerColor;
+                    gap: 20px 0;
+                    line-height: 1;
+
+                    .link {
+                        &:hover, &:focus {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 575.98px) {
+    .article {
+        &_media {
+            &--main {
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .page {
+        &_header {
+            .wrapper {
+                margin-top: 93px;
+
+                &:before {
+                    top: -53px;
+                }
+            }
+        }
+    }
+    .article {
+        &_media {
+            &--main {
+                height: 480px;
+            }
+
+            &--secondary {
+                height: 340px;
+                margin: 40px 0;
+            }
+        }
+
+        &_tags {
+            margin-bottom: 40px;
+        }
+
+        &_progress {
+            margin: 40px 0;
+        }
+
+        &_quote {
+            padding: 40px 80px;
+            margin: 40px 0;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .page {
+        &_header {
+            .wrapper {
+                margin-top: 113px;
+
+                &:before {
+                    top: -63px;
+                }
+            }
+        }
+    }
+    .article {
+        &_media {
+            margin-bottom: 50px;
+
+            &--secondary {
+                margin: 50px 0;
+            }
+        }
+
+        &_tags {
+            margin-bottom: 120px;
+        }
+
+        &_progress {
+            margin: 50px 0;
+        }
+
+        &_quote {
+            padding: 50px 80px;
+            margin: 50px 0;
+        }
+    }
+}

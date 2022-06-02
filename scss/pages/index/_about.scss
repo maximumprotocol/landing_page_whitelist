@@ -1,0 +1,231 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// about section
+
+.about {
+    padding-bottom: 60px;
+
+    &_shape {
+        display: none;
+    }
+
+    &_main {
+        margin-bottom: 40px;
+
+        .wrapper {
+            position: relative;
+            padding-bottom: 28px;
+            margin-bottom: 10px;
+            max-width: 520px;
+
+            &:before {
+                content: '';
+                @include caret;
+                bottom: 0;
+                left: 0;
+            }
+        }
+
+
+        &-text {
+            margin-bottom: 20px;
+        }
+
+        &-list {
+            gap: 20px 0;
+            margin-bottom: 40px;
+
+            &_item {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+
+                .media {
+                    font-size: 24px;
+                    width: 70px;
+                    height: 70px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: $border;
+                    border-radius: 50%;
+                    color: $primary;
+                }
+
+                .main {
+                    width: calc(100% - 90px);
+
+                    &_title {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        &-action {
+            gap: 15px 0;
+        }
+    }
+
+    &_media {
+        position: relative;
+
+        &-shape {
+            position: absolute;
+            transform: rotate(30deg);
+            max-height: 200px;
+            width: unset;
+            bottom: -20px;
+            left: -110px;
+            z-index: -1;
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 575.98px) {
+    .about {
+        &_main {
+            &-action {
+                gap: 0 20px;
+                justify-content: space-between;
+
+                &_btn {
+                    width: calc(50% - 10px);
+                }
+            }
+        }
+
+        &_media {
+            &-shape {
+                max-height: 250px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .about {
+        padding-bottom: 100px;
+
+        &_main {
+            &-action {
+                justify-content: flex-start;
+            }
+        }
+
+        &_media {
+            &-shape {
+                max-height: 400px;
+                left: -200px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .about {
+        padding-bottom: 120px;
+
+        &_main {
+            max-width: 520px;
+            margin-bottom: 0;
+        }
+
+        &_media {
+            flex-grow: 1;
+
+            &-main {
+                position: absolute;
+                max-height: 580px;
+                height: 100%;
+                width: unset;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &-shape {
+                max-height: 250px;
+                left: -80px;
+                bottom: 90px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .about {
+        &_media {
+            &-main {
+                right: -150px;
+            }
+
+            &-shape {
+                left: -56px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1399.98px) {
+    .about {
+        position: relative;
+
+        &_shape {
+            display: block;
+            position: absolute;
+            max-height: 930px;
+            height: 100%;
+            width: unset;
+            left: -47%;
+            z-index: -1;
+        }
+    }
+}
+
+@media screen and (min-width: 1599.98px) {
+    .about {
+        &_shape {
+            left: -35%;
+            top: -60px;
+        }
+
+        &_media {
+            &-main {
+                right: unset;
+                left: 170px;
+            }
+
+            &-shape {
+                left: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1799.98px) {
+    .about {
+        &_shape {
+            left: -28%;
+        }
+    }
+}
+
+@media screen and (min-width: 1999.98px) {
+    .about {
+        &_shape {
+            left: -20%;
+        }
+    }
+}

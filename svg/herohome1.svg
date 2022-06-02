@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2369px" height="819px" viewBox="0 0 2369 819" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Hero Section_2</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Hero-Section_2" transform="translate(0.924452, 0.000000)">
+            <path d="M114.2725,0 L2368.07555,0 C2168.4426,302.268856 1978.60951,459.65811 1798.57625,472.167764 C1528.52638,490.932242 1496.99505,628.921266 1238.69514,739.107184 C1053.03181,818.307693 83.4875855,972.399624 4.57554827,392 C-11.2108904,275.890426 11.1508458,136.876463 114.2725,0 Z" id="header-bg" fill="#5634f7" fill-rule="nonzero"></path>
+            <path d="M4.70525077,696.516495 C146.859808,392.899973 297.158326,278.553508 431.890463,253.477102 C797.245255,185.477102 1051.57134,374.361114 1373.83763,448.477103 C1626.02943,506.477103 1853.65197,515.107323 2056.70525,474.367765" id="Line" stroke="#FFFFFF" stroke-linecap="square" transform="translate(1030.705249, 467.738550) scale(-1, 1) rotate(-180.000000) translate(-1030.705249, -467.738550) "></path>
+            <ellipse id="shape-line" stroke="#F8F8FF" cx="1724.07555" cy="326.5" rx="591.5" ry="194"></ellipse>
+            <circle id="Oval" stroke="#1B2129" fill="#FFFFFF" fill-rule="nonzero" cx="2119.59194" cy="562.5" r="170.5"></circle>
+            <circle id="Oval" stroke="#1B2129" fill="#5634f7" fill-rule="nonzero" cx="2289.59194" cy="495.5" r="50"></circle>
+            <circle id="Oval" stroke="#1B2129" fill="#FFFFFF" fill-rule="nonzero" cx="1890.59194" cy="714.5" r="18"></circle>
+        </g>
+    </g>
+</svg>

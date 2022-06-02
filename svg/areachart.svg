@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="667px" viewBox="0 0 375 667" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Area Chart</title>
+    <g id="Area-Chart" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#F4F4F6" x="0" y="0" width="375" height="667"></rect>
+        <g id="Content" transform="translate(0.000000, 80.000000)">
+            <g id="Details" transform="translate(0.000000, 216.000000)">
+                <g id="List-/-Row-/-Text-/-1-+-1-/-Label" transform="translate(0.000000, 326.000000)">
+                    <rect id="BG" fill="#FFFFFF" x="0" y="0" width="375" height="48"></rect>
+                    <text id="Label" font-family="OpenSans, Open Sans" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.5" fill="#ABABB6">
+                        <tspan x="326.046875" y="29">2.2k</tspan>
+                    </text>
+                    <text id="Label" font-family="RobotoMono-Regular, Roboto Mono" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.5" fill="#4E4E56">
+                        <tspan x="16" y="29">Tuesday</tspan>
+                    </text>
+                </g>
+                <g id="List-/-Row-/-Text-/-1-+-1-/-Label" transform="translate(0.000000, 277.000000)">
+                    <rect id="BG" fill="#FFFFFF" x="0" y="0" width="375" height="48"></rect>
+                    <text id="Label" font-family="OpenSans, Open Sans" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.5" fill="#ABABB6">
+                        <tspan x="326.046875" y="29">2.5k</tspan>
+                    </text>
+                    <text id="Label" font-family="RobotoMono-Regular, Roboto Mono" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.5" fill="#4E4E56">
+                        <tspan x="16" y="29">Wednesday</tspan>
+                    </text>
+                </g>
+                <g id="List-/-Row-/-Text-/-1-+-1-/-Label" transform="translate(0.000000, 228.000000)">
+                    <rect id="BG" fill="#FFFFFF" x="0" y="0" width="375" height="48"></rect>
+                    <text id="Label" font-family="OpenSans, Open Sans" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.5" fill="#ABABB6">
+                        <tspan x="326.046875" y="29">1.9k</tspan>
+                    </text>
+                    <text id="Label" font-family="RobotoMono-Regular, Roboto Mono" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.5" fill="#4E4E56">
+                        <tspan x="16" y="29">Thursday</tspan>
+                    </text>
+                </g>
+                <g id="List-/-Row-/-Text-/-1-+-1-/-Label" transform="translate(0.000000, 179.000000)">
+                    <rect id="BG" fill="#FFFFFF" x="0" y="0" width="375" height="48"></rect>
+                    <text id="Label" font-family="OpenSans, Open Sans" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.5" fill="#ABABB6">
+                        <tspan x="326.046875" y="29">1.5k</tspan>
+                    </text>
+                    <text id="Label" font-family="RobotoMono-Regular, Roboto Mono" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.5" fill="#4E4E56">
+                        <tspan x="16" y="29">Friday</tspan>
+                    </text>
+                </g>
+                <g id="List-/-Row-/-Text-/-1-+-1-/-Label" transform="translate(0.000000, 130.000000)">
+                    <rect id="BG" fill="#FFFFFF" x="0" y="0" width="375" height="48"></rect>
+                    <text id="Label" font-family="OpenSans, Open Sans" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.5" fill="#ABABB6">
+                        <tspan x="326.046875" y="29">2.1k</tspan>
+                    </text>
+                    <text id="Label" font-family="RobotoMono-Regular, Roboto Mono" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.5" fill="#4E4E56">
+                        <tspan x="16" y="29">Saturday</tspan>
+                    </text>
+                </g>
+                <g id="List-/-Row-/-Text-/-1-+-1-/-Label" transform="translate(0.000000, 81.000000)">
+                    <rect id="BG" fill="#FFFFFF" x="0" y="0" width="375" height="48"></rect>
+                    <text id="Label" font-family="OpenSans, Open Sans" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.5" fill="#ABABB6">
+                        <tspan x="326.046875" y="29">1.8k</tspan>
+                    </text>
+                    <text id="Label" font-family="RobotoMono-Regular, Roboto Mono" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.5" fill="#4E4E56">
+                        <tspan x="16" y="29">Sunday</tspan>
+                    </text>
+                </g>
+                <g id="List-/-Row-/-Text-/-1-+-1-/-Label" transform="translate(0.000000, 32.000000)">
+                    <rect id="BG" fill="#FFFFFF" x="0" y="0" width="375" height="48"></rect>
+                    <text id="Label" font-family="OpenSans, Open Sans" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.5" fill="#ABABB6">
+                        <tspan x="326.046875" y="29">1.2k</tspan>
+                    </text>
+                    <text id="Label" font-family="RobotoMono-Regular, Roboto Mono" font-size="16" font-weight="normal" line-spacing="24" letter-spacing="0.5" fill="#4E4E56">
+                        <tspan x="16" y="29">Monday</tspan>
+                    </text>
+                </g>
+                <g id="List-/-Header-/-Sticky">
+                    <rect id="BG" fill="#F4F4F6" x="0" y="0" width="375" height="32"></rect>
+                    <text id="Sticky-Header" font-family="RobotoMono-Bold, Roboto Mono" font-size="14" font-weight="bold" line-spacing="16" letter-spacing="0.5" fill="#4E4E56">
+                        <tspan x="16" y="23">Current Month</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Area-Chart" transform="translate(16.000000, 0.000000)">
+                <polygon id="Past-Chart" fill="#E4E4E5" points="0 56 15.5 58 54.5 25 93.5 38 132.5 27 171.5 80 210.5 63 249.5 10 288.5 49 327.5 0 343 10 343 200 0 200"></polygon>
+                <polygon id="Current-Chart" fill="#5634f7" points="0 116 15.5 98 54.5 95 93.5 118 132.5 87 171.5 120 210.5 133 249.5 100 288.5 79 327.5 91 343 80 343 200 0 200"></polygon>
+            </g>
+        </g>
+        <g id="Navigation-Bar-/-Icon---Title---Icon">
+            <rect id="BG" fill="#FFFFFF" x="0" y="0" width="375" height="64"></rect>
+            <g id="Actions" transform="translate(16.000000, 24.000000)">
+                <g id="Shape" transform="translate(319.000000, 0.000000)">
+                    <polygon points="0 0 24 0 24 24 0 24"></polygon>
+                    <path d="M12,2 L16,6 L13,6 L13,15 L11,15 L11,6 L8,6 L12,2 Z M20,8 L15,8 L15,9.99 L20,9.99 L20,20.02 L4,20.02 L4,9.99 L9,9.99 L9,8 L4,8 C2.9,8 2,8.9 2,10 L2,20 C2,21.1 2.9,22 4,22 L20,22 C21.1,22 22,21.1 22,20 L22,10 C22,8.9 21.1,8 20,8 Z" fill="#4E4E56"></path>
+                </g>
+                <g id="Shape" transform="translate(279.000000, 0.000000)">
+                    <polygon points="0 0 24 0 24 24 0 24"></polygon>
+                </g>
+                <g id="Shape" transform="translate(40.000000, 0.000000)">
+                    <polygon points="0 0 24 0 24 24 0 24"></polygon>
+                </g>
+                <g id="Shape">
+                    <polygon points="0 0 24 0 24 24 0 24"></polygon>
+                    <path d="M13.9653985,19 C13.9048959,18.9958498 13.8894953,18.9963498 13.8295927,18.9860494 C13.6948869,18.9627984 13.5653314,18.9117462 13.4510265,18.836743 C13.393224,18.7988414 13.3427718,18.7547395 13.2923697,18.7076875 L7.29211252,12.7074303 C7.25071074,12.6630784 7.23916025,12.652978 7.20240867,12.6045259 C7.16115691,12.5501236 7.12550538,12.4914711 7.09615412,12.4297684 C6.96794863,12.1602069 6.96794863,11.8403432 7.09615412,11.5707816 C7.12550538,11.509079 7.16115691,11.4504264 7.20240867,11.3960241 C7.23916025,11.347622 7.25071074,11.3374716 7.29211252,11.2931697 L13.2923697,5.29291255 C13.3367216,5.25151078 13.346872,5.23991028 13.3952741,5.20320871 C13.5223795,5.10675458 13.672386,5.04165179 13.8295927,5.01450062 C13.9418475,4.99519979 14.0572025,4.99519979 14.1694573,5.01450062 C14.2592111,5.03000129 14.3467649,5.05780248 14.4290184,5.09690415 C14.7414318,5.24546052 14.9589411,5.55362373 14.9943426,5.89773847 C15.0082932,6.0337443 14.9940426,6.17225024 14.9526908,6.30255582 C14.9182394,6.41111048 14.8651871,6.51356487 14.7963841,6.60426875 C14.7596326,6.65272083 14.7480821,6.66282126 14.7066803,6.70717316 L9.41355344,12.0003 L14.7066803,17.2934269 L14.7532823,17.343329 C14.7915339,17.390331 14.8024344,17.4012815 14.8357358,17.4520837 C14.8981885,17.5472877 14.9441905,17.6531423 14.9711416,17.763747 C14.9926925,17.8522508 15.0020929,17.9436547 14.9989928,18.0346586 C14.9871923,18.3804234 14.7911839,18.7026873 14.489671,18.8722445 C14.3904167,18.9280469 14.2816621,18.9666986 14.1694573,18.9860494 C14.1095547,18.9963498 14.094154,18.9958498 14.0336514,19 L13.9653985,19 L13.9653985,19 Z" fill="#4E4E56"></path>
+                </g>
+            </g>
+            <text id="Title" font-family="Lato-Bold, Lato" font-size="16" font-weight="bold" line-spacing="24" letter-spacing="0.5" fill="#4E4E56">
+                <tspan x="168.566" y="40">Stats</tspan>
+            </text>
+            <g id="Group">
+                <path d="M365,13.0029699 C365,13.5536144 364.555054,14 364.006602,14 L347.993398,14 C347.444759,14 347,13.5469637 347,13.0029699 L347,6.99703014 C347,6.4463856 347.444946,6 347.993398,6 L364.006602,6 C364.555241,6 365,6.45303631 365,6.99703014 L365,13.0029699 Z M366,8 C366.552285,8 367,8.44335318 367,9.0093689 L367,10.9906311 C367,11.5480902 366.556135,12 366,12 L366,8 Z" id="Battery" fill="#CDCDD2"></path>
+                <g id="Dots" transform="translate(8.000000, 8.000000)">
+                    <path d="M28,2 C28,3.10457143 27.1045075,4 25.9998572,4 C24.8952069,4 24.0000001,3.10485714 24.0000001,2 C23.9997143,0.895428571 24.8952069,0 25.9998572,0 C27.1045075,0 28,0.895428571 28,2 Z" id="5" fill="#E4E4E5"></path>
+                    <path d="M20,0 C21.1045714,0 22,0.895428571 22,2 C22,3.10457143 21.1045714,4 20,4 C18.8954286,4 18,3.10485714 18,2 C18,0.895428571 18.8954286,0 20,0 L20,0 Z" id="4" fill="#CDCDD2"></path>
+                    <path d="M13.9998572,0 C15.1043497,0 16,0.895428571 16,2 C16,3.10457143 15.1046354,4 13.9998572,4 C12.8953646,4 12,3.10485714 12,2 C12,0.895428571 12.8956503,0 13.9998572,0 L13.9998572,0 Z" id="3" fill="#CDCDD2"></path>
+                    <path d="M8,0 C9.10457143,0 10,0.895428571 10,2 C10,3.10457143 9.10457143,4 8,4 C6.89542857,4 6,3.10485714 6,2 C6,0.895428571 6.89542857,0 8,0 L8,0 Z" id="2" fill="#CDCDD2"></path>
+                    <path d="M1.99985715,0 C3.10434969,0 4,0.895428571 4,2 C4,3.10457143 3.10463538,4 1.99985715,4 C0.895364617,4 9.09494702e-13,3.10485714 9.09494702e-13,2 C9.09494702e-13,0.895428571 0.895650311,0 1.99985715,0 L1.99985715,0 Z" id="1" fill="#CDCDD2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

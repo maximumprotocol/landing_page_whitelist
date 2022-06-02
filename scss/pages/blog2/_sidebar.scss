@@ -1,0 +1,301 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// blog aside component
+
+.blog {
+    &_sidebar {
+        gap: 40px 0;
+        margin-bottom: 60px;
+
+        &-widget {
+            &_title {
+                margin-bottom: 20px;
+                position: relative;
+                padding-left: 40px;
+                line-height: 1;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 2px;
+                    left: 0;
+                    width: 22px;
+                    height: 13px;
+                    background: $accent;
+                }
+            }
+
+            .list {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &--search {
+                .form {
+                    .field {
+                        margin-right: 10px;
+                        flex-grow: 1;
+                    }
+
+                    .btn {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+
+            &--nav {
+                .list {
+                    &-item {
+                        .link {
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 19px;
+                            text-transform: uppercase;
+                            color: $headerColor;
+
+                            &.current,
+                            &:hover, &:focus {
+                                color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &--recent {
+                max-width: 300px;
+
+                .list {
+                    gap: 30px 0;
+
+                    &-item {
+                        display: flex;
+                        gap: 0 20px;
+                        height: 150px;
+
+                        .media {
+                            width: 100px;
+
+                            img {
+                                height: 100%;
+                            }
+                        }
+
+                        .main {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            width: calc(100% - 120px);
+
+                            &_title {
+                                display: block;
+                                font-family: $headerFont;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &--comments {
+                .list {
+                    gap: 15px 0;
+
+                    &-item {
+                        color: #2B2B2B;
+                        line-height: 22px;
+
+                        .icon, .author {
+                            color: $primary;
+                        }
+
+                        .icon {
+                            margin-right: 10px;
+                            position: relative;
+                            top: 2px;
+                        }
+
+                        .author {
+                            font-weight: 600;
+                        }
+
+                        .link {
+                            color: #575757;
+                        }
+                    }
+                }
+            }
+
+            &--archives {
+                .list {
+                    &-item {
+                        .icon {
+                            color: $primary;
+                        }
+
+                        .link {
+                            display: inline-flex;
+                            align-items: center;
+                            font-size: 14px;
+                            line-height: 32px;
+                            font-weight: 700;
+                            font-family: $headerFont;
+                            color: $headerColor;
+                            gap: 0 20px;
+
+                            &:hover {
+                                color: $primary;
+                                .icon {
+                                    transform: rotate(180deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &--tags {
+                .blog_sidebar-widget_title {
+                    margin-bottom: 25px;
+                }
+
+                .list {
+                    flex-direction: row;
+                    gap: 10px;
+                }
+            }
+
+            &--calendar {
+                .blog_sidebar-widget_title {
+                    margin-bottom: 30px;
+                }
+
+                .wrapper {
+                    background: $lightgray;
+                    padding: 20px;
+                }
+
+                .table {
+                    width: 100%;
+
+                    &_header {
+                        text-align: left;
+                        padding: 10px 0;
+                        position: relative;
+
+                        &:after {
+                            content: '';
+                            height: 2px;
+                            width: 100%;
+                            position: absolute;
+                            left: 50%;
+                            bottom: 0;
+                            transform: translateX(-50%);
+                            background: $headerColor;
+                        }
+
+                        &-nav {
+                            gap: 0 15px;
+
+                            .nav-item {
+                                line-height: 1;
+                                position: relative;
+                                top: 1px;
+                                cursor: pointer;
+                                color: $primary;
+
+                                &--disabled {
+                                    pointer-events: none;
+                                    color: #949494;
+                                }
+                            }
+                        }
+
+                        &-year {
+                            position: absolute;
+                            right: 0;
+                            bottom: 14px;
+                            font-family: $headerFont;
+                            color: $headerColor;
+                        }
+                    }
+
+                    &_body {
+                        text-align: center;
+
+                        &-week {
+                            color: $primary;
+                            font-weight: 600;
+                            height: 40px;
+                        }
+
+                        &-dates {
+                            height: 30px;
+                            font-weight: 600;
+                            color: $headerColor;
+
+                            &_date {
+                                cursor: pointer;
+                                transition: .3s ease-in-out;
+
+                                &--highlight, &:hover {
+                                    background: $accent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 767.98px) {
+    .blog {
+        &_sidebar {
+            width: 50%;
+            margin-bottom: 100px;
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .blog {
+        &_sidebar {
+            width: 340px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .blog {
+        &_sidebar {
+            &-widget {
+                .list {
+                    padding-left: 40px;
+                }
+                &--recent {
+                    max-width: unset;
+                }
+                &--calendar {
+                    .wrapper {
+                        margin-left: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="268px" height="571px" viewBox="0 0 268 571" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Phone center</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01.Home" transform="translate(-824.000000, -3028.000000)">
+            <g id="Hero-App-Solutions" transform="translate(-512.693644, 2147.653112)">
+                <g id="App-screens_Swipe-Slider" transform="translate(919.693644, 880.346888)">
+                    <g id="Phone-center" transform="translate(417.000000, 0.000000)">
+                        <path d="M0,513 L268,513 L268,535 C268,554.882251 251.882251,571 232,571 L36,571 C16.117749,571 2.4348735e-15,554.882251 0,535 L0,513 L0,513 Z" id="panel" fill="#EBEBFF"></path>
+                        <g id="icons" transform="translate(77.000000, 531.000000)" fill="#808080" font-size="16" letter-spacing="0.4444444">
+                            <text id="" font-family="FontAwesome5Pro-Solid, Font Awesome 5 Pro" font-weight="800">
+                                <tspan x="50" y="14"></tspan>
+                            </text>
+                            <text id="" font-family="FontAwesome5Pro-Regular, Font Awesome 5 Pro" font-weight="normal">
+                                <tspan x="100" y="14"></tspan>
+                            </text>
+                            <text id="" font-family="FontAwesome5Pro-Regular, Font Awesome 5 Pro" font-weight="normal">
+                                <tspan x="0" y="14"></tspan>
+                            </text>
+                        </g>
+                        <text id="wifi" font-family="FontAwesome5Pro-Solid, Font Awesome 5 Pro" font-size="10" font-weight="800" letter-spacing="0.27777775" fill="#F8F8FF">
+                            <tspan x="225" y="20">wifi</tspan>
+                        </text>
+                        <text id="12:00" font-family="OpenSans-Bold, Open Sans" font-size="10" font-weight="bold" letter-spacing="0.27777775" fill="#F8F8FF">
+                            <tspan x="20" y="25">12:00</tspan>
+                        </text>
+                        <rect id="line" fill="#1B2129" x="85" y="561" width="99" height="4" rx="2"></rect>
+                        <rect id="phone" stroke="#1B2129" stroke-width="2" x="1" y="1" width="266" height="569" rx="36"></rect>
+                        <path d="M56,0.425766014 L211.81311,0.425766014 C209.481088,-1.10124352 208.056304,1.47921099 207.538757,8.16712954 C207.479908,8.9276027 207.42775,9.67598615 207.382284,10.4122799 C206.861021,18.8500352 199.865584,25.4262724 191.411743,25.425766 L75.222168,25.425766 C66.3856123,25.4280257 59.2203362,18.2664142 59.218076,9.42985847 C59.2180665,9.39244634 59.2181881,9.35503429 59.2184452,9.31762304 C59.2214066,8.88201991 59.2126886,8.49852207 59.1922913,8.16712954 C59.0332292,5.58286714 57.9691321,3.00241263 56,0.425766014 Z" id="panel" fill="#1B2129"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

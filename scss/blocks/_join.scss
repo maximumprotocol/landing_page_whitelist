@@ -1,0 +1,129 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// join section common styles
+
+.join {
+    padding: 60px 0;
+
+    &_media {
+        display: none;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    &_header {
+        &-wrapper {
+            position: relative;
+            display: inline-block;
+            width: fit-content;
+
+            .animatedUnderline {
+                position: absolute;
+                height: 16px;
+                width: 100%;
+                background: $accent;
+                left: 0;
+                bottom: -2px;
+                border-radius: 2px;
+                z-index: -1;
+                transition: width .6s ease-in-out;
+            }
+        }
+    }
+
+    &_list {
+        margin: 20px 0 30px;
+        gap: 10px 0;
+
+        &-item {
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            color: $headerColor;
+
+            .icon {
+                font-size: 14px;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 575.98px) {
+    .join {
+        &_btn {
+            width: 250px;
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .join {
+        padding: 100px 0;
+
+        &_header {
+            text-align: center;
+            &-wrapper {
+                .animatedUnderline {
+                    bottom: 2px;
+                }
+            }
+        }
+
+        &_list {
+            gap: 0 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .join {
+        padding: 110px 0 120px;
+
+        &_header {
+            max-width: 800px;
+            margin: 0 auto;
+            &-wrapper {
+                .animatedUnderline {
+                    height: 22px;
+                    bottom: 2px;
+                }
+            }
+        }
+
+        &_list {
+            gap: 0 60px;
+        }
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .join {
+        position: relative;
+        overflow: hidden;
+
+        &_media {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+}

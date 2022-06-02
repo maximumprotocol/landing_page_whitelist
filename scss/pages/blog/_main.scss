@@ -1,0 +1,186 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// blog (boxes) main content
+
+.page {
+    padding: 20px 0 30px;
+
+    .wrapper {
+        position: relative;
+        margin-top: 73px;
+
+        &:before {
+            content: '';
+            @include caret;
+            top: -43px;
+            left: 0;
+        }
+    }
+}
+
+.blog {
+    padding-bottom: 60px;
+
+    &_filters {
+        padding-bottom: 30px;
+        margin-bottom: 15px;
+        border-bottom: 2px solid $headerColor;
+        gap: 5px 20px;
+
+        &-item {
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 19px;
+            font-weight: 700;
+
+            &.current {
+                pointer-events: none;
+            }
+
+            &:hover, &:focus,
+            &.current {
+                color: $primary;
+            }
+        }
+    }
+
+    &_posts {
+        margin-top: -15px;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 6px;
+            background: #fff;
+            z-index: 1000;
+            display: none;
+        }
+
+        &-item {
+            margin-top: 40px;
+
+            .wrapper {
+                position: relative;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    right: -4px;
+                    bottom: 0;
+                    height: 25px;
+                    width: 10px;
+                    background: #fff;
+                    display: none;
+                }
+            }
+
+            .media {
+                padding-bottom: 40px;
+                border-bottom: 2.5px solid $headerColor;
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 767.98px) {
+    .blog {
+        padding-bottom: 100px;
+
+        &_posts {
+            margin: -25px -20px 0;
+
+            &-item {
+                width: 49%;
+                margin-top: 25px;
+                display: flex;
+                flex-direction: column;
+
+                .wrapper {
+                    border-right: 2.1px solid transparent;
+                    display: block;
+                }
+
+                &.shuffle-item--visible {
+                    .wrapper {
+                        border-color: $headerColor;
+                    }
+                }
+
+                &.shuffle-item--hidden {
+                    .wrapper {
+                        border: none;
+                    }
+                }
+
+                &:before {
+                    display: none;
+                }
+
+                .wrapper {
+                    padding: 0 20px;
+                }
+
+                .media {
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .page {
+        .wrapper {
+            margin-top: 100px;
+
+            &:before {
+                top: -53px;
+            }
+        }
+    }
+    .blog {
+        padding-bottom: 120px;
+
+        &_posts {
+            &-item {
+                .main {
+                    &_title {
+                        min-height: 96px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .blog {
+        &_posts {
+            &-item {
+                width: calc(100% / 3);
+
+                .main {
+                    &_title {
+                        min-height: 128px;
+                    }
+                }
+            }
+        }
+    }
+}

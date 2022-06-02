@@ -1,0 +1,112 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// blog main content
+
+.page {
+    padding: 20px 0 40px;
+
+    &_title {
+        position: relative;
+        padding-top: 30px;
+        margin-top: 30px;
+
+        &:before {
+            content: '';
+            @include caret;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+.blog {
+    &_wrapper {
+        margin-bottom: 60px;
+    }
+
+    &_posts {
+        gap: 40px 0;
+
+        &-item {
+            border-bottom: 2px solid $headerColor;
+            padding-bottom: 40px;
+
+            .media {
+                height: 250px;
+                margin-bottom: 20px;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            .main {
+                &_title {
+                    display: block;
+                    margin-bottom: 5px;
+                }
+
+                &_preview {
+                    margin: 15px 0 20px;
+                }
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 575.98px) {
+    .blog {
+        &_posts {
+            &-item {
+                .media {
+                    height: 350px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .page {
+        padding: 20px 0 60px;
+    }
+    .blog {
+        &_wrapper {
+            margin-bottom: 100px;
+        }
+        &_posts {
+            gap: 50px 0;
+            &-item {
+                .media {
+                    height: 440px;
+                }
+                .main {
+                    &_title {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .blog {
+        &_wrapper {
+            width: calc(100% - 40px - 340px);
+            margin-bottom: 120px;
+        }
+    }
+}

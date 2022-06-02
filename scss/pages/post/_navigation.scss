@@ -1,0 +1,120 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// post navigation
+
+.navigation {
+    padding: 30px 0;
+    border-top: 2px solid $headerColor;
+    border-bottom: 2px solid $headerColor;
+    margin-bottom: 60px;
+    gap: 30px 0;
+
+    .divider {
+        background: $headerColor;
+        box-shadow: 2px 1px 0 $accent;
+        height: 2px;
+    }
+
+    &_block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &--prev {
+            .label {
+                .icon {
+                    transform: rotate(45deg);
+                }
+
+                &:hover, &:focus {
+                    .icon {
+                        top: 2px;
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+        }
+
+        &--next {
+            text-align: right;
+            align-items: flex-end;
+
+            .label {
+                &:hover, &:focus {
+                    .icon {
+                        top: 2px;
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+
+        .label {
+            display: inline-flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 65px;
+            color: $primary;
+            gap: 0 10px;
+        }
+
+        .title {
+            &:hover, &:focus {
+                color: $primary;
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 767.98px) {
+    .navigation {
+        margin-bottom: 100px;
+        gap: 0 30px;
+
+        .divider {
+            height: auto;
+            width: 2px;
+        }
+
+        &_block {
+            width: calc(50% - 31px);
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .navigation {
+        margin-bottom: 120px;
+
+        &_block {
+            .title {
+                max-width: 440px;
+            }
+
+            &--prev {
+                .title {
+                    margin-left: 44px;
+                }
+            }
+
+            &--next {
+                .title {
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+}

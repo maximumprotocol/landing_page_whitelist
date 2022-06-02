@@ -1,0 +1,81 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// services section
+
+.stripe {
+    border-top: 1px solid #CFCFFB;
+    border-bottom: 1px solid #CFCFFB;
+}
+
+.services {
+    background: $primary;
+
+    &_list {
+        padding: 60px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 30px 0;
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 767.98px) {
+    .services {
+
+        &_list {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 100px 0;
+
+            .wrapper {
+                width: calc(50% - 20px);
+            }
+
+            &-item {
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .services {
+        &_list {
+            gap: 50px;
+            padding: 120px 0;
+
+            .wrapper {
+                width: calc(50% - 25px);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .services {
+        &_list {
+            gap: 0;
+            flex-wrap: nowrap;
+
+            .wrapper {
+                width: 25%;
+            }
+
+            &-item {
+                padding-right: 10px;
+            }
+        }
+    }
+}

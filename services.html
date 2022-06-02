@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Services | Sitech</title>
+        <script id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflS50iB-/www-widgetapi.js" async=""></script>
+        <script src="https://www.youtube.com/player_api"></script>
+        <link rel="stylesheet preload" as="style" href="css/preload.min.css" />
+        <link rel="stylesheet preload" as="style" href="css/icomoon.css" />
+        <link rel="stylesheet preload" as="style" href="css/libs.min.css" />
+        <link rel="stylesheet" href="css/services.min.css" />
+    </head>
+    <body>
+        <header class="header d-lg-flex align-items-center" data-page="services" data-page-parent="services">
+            <div class="container d-flex align-items-center flex-wrap flex-lg-nowrap">
+                <a class="logo header_logo d-inline-flex align-items-center" href="index.html">
+                    <span class="logo_icon">
+                        <img src="svg/logo.svg" alt="Sitech" />
+                    </span>
+                    <span class="logo_text h5">Sitech</span>
+                </a>
+                <nav class="header_nav collapse" id="headerMenu">
+                    <ul class="header_nav-list">
+                        <li class="header_nav-list_item dropdown">
+                            <a
+                                class="nav-link nav-item dropdown-toggle d-flex align-items-center justify-content-between"
+                                href="index.html"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#homeMenu"
+                                data-trigger="dropdown"
+                                data-main-link="true"
+                                aria-expanded="true"
+                                aria-controls="homeMenu"
+                                data-page="home"
+                                data-page-parent="home"
+                            >
+                                <span class="nav-item_text">
+                                    Home
+                                    <i class="icon-circle icon"></i>
+                                </span>
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                            <div class="dropdown-menu collapse show" id="homeMenu">
+                                <ul class="dropdown-list">
+                                    <li class="list-item" data-main="true">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="home"
+                                            data-page-parent="home"
+                                            href="index.html"
+                                            data-main="true"
+                                        >
+                                            Home 1
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="home2" data-page-parent="home" href="index2.html">
+                                            Home 2
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item nav-link" href="about.html" data-page="about" data-single="true">
+                                <span class="nav-item_text">About</span>
+                            </a>
+                        </li>
+                        <li class="header_nav-list_item dropdown">
+                            <a
+                                class="nav-link nav-item dropdown-toggle d-flex align-items-center justify-content-between"
+                                href="services.html"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#servicesMenu"
+                                data-trigger="dropdown"
+                                data-page-parent="services"
+                                data-main-link="true"
+                                aria-expanded="false"
+                                aria-controls="servicesMenu"
+                                data-page="services"
+                            >
+                                <span class="nav-item_text">
+                                    Services
+                                    <i class="icon-circle icon"></i>
+                                </span>
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                            <div class="dropdown-menu collapse" id="servicesMenu">
+                                <ul class="dropdown-list">
+                                    <li class="list-item" data-main="true">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="services"
+                                            data-page-parent="services"
+                                            href="services.html"
+                                            data-main="true"
+                                        >
+                                            All Services
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="service"
+                                            data-page-parent="services"
+                                            href="service.html"
+                                        >
+                                            Single service
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item nav-link" href="prices.html" data-page="prices" data-single="true">
+                                <span class="nav-item_text">Prices</span>
+                            </a>
+                        </li>
+                        <li class="header_nav-list_item dropdown">
+                            <a
+                                class="nav-link nav-item dropdown-toggle d-flex align-items-center justify-content-between"
+                                href="#"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#pagesMenu"
+                                data-trigger="dropdown"
+                                data-page-parent="pages"
+                                data-main-link="true"
+                                aria-expanded="false"
+                                aria-controls="pagesMenu"
+                            >
+                                <span class="nav-item_text">
+                                    Pages
+                                    <i class="icon-circle icon"></i>
+                                </span>
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                            <div class="dropdown-menu collapse" id="pagesMenu">
+                                <ul class="dropdown-list">
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="blog" data-page-parent="pages" href="blog.html">
+                                            Blog Boxes
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="blog2" data-page-parent="pages" href="blog2.html">
+                                            Blog Sidebar
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="post" data-page-parent="pages" href="post.html">
+                                            Single post
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="faq" data-page-parent="pages" href="faq.html"> FAQ </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="404" data-page-parent="pages" href="404.html">
+                                            Error Page
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item nav-link" href="contact.html" data-page="contact" data-single="true">
+                                <span class="nav-item_text">Contact</span>
+                            </a>
+                        </li>
+                        <li class="header_nav-list_btn">
+                            <a class="btn signUpTrigger" href="#">Get a demo</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header_btn btn btn--neon signUpTrigger" href="#">Get a demo</a>
+                <button
+                    class="header_trigger"
+                    id="headerTrigger"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#headerMenu"
+                    aria-controls="headerMenu"
+                    aria-expanded="false"
+                    type="button"
+                >
+                    <i class="icon-arrow-left icon arrow-rotate"></i>
+                </button>
+            </div>
+        </header>
+        <header class="page">
+            <div class="page_shapes">
+                <div class="page_shapes-group page_shapes-group--left">
+                    <img class="main-shape" src="svg/shapes_bg.svg" alt="Services" />
+                    <img class="secondary-shape" src="svg/circles_white.svg" alt="Services" />
+                </div>
+                <div class="page_shapes-group page_shapes-group--right">
+                    <img class="main-shape" src="svg/shapes_bg3.svg" alt="Services" />
+                    <img class="secondary-shape" src="svg/ovals-line_group.svg" alt="Services" />
+                </div>
+            </div>
+            <div class="container">
+                <ul class="breadcrumbs d-flex flex-wrap">
+                    <li class="breadcrumbs_item">
+                        <a class="link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="breadcrumbs_item current">
+                        <span id="currentpage">Services</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="container d-md-flex">
+                <div class="page_header">
+                    <div class="wrapper">
+                        <span class="tw-height h2">
+                            <span class="text">Services</span>
+                        </span>
+                        <h2 class="page_header-title type" data-text="Services">Services</h2>
+                    </div>
+                    <h5 class="page_header-subtitle">Get investing today with easy-access investment tools</h5>
+                </div>
+                <div class="page_media">
+                    <img class="page_media-main" src="svg/services.svg" alt="Services" />
+                    <img class="page_media-shape" src="svg/ovalgreen.svg" alt="Services" />
+                </div>
+            </div>
+        </header>
+        <!-- services content start -->
+        <main class="services">
+            <div class="container">
+                <ul class="services_list d-flex flex-column">
+                    <li class="services_list-item">
+                        <div class="media">
+                            <picture>
+                                <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" type="image/webp" />
+                                <img
+                                    class="lazy"
+                                    data-src="img/placeholder.jpg"
+                                    src="img/placeholder.jpg"
+                                    alt="Data Analysis"
+                                />
+                            </picture>
+                            <span class="media_icon">
+                                <i class="icon-chart-bar icon"></i>
+                            </span>
+                        </div>
+                        <div class="main">
+                            <h4 class="main_title">Data Analysis</h4>
+                            <p class="main_text">Phasellus fringilla dignissim diam. Duis nec tempus ligula. Curabitur vel pretium.</p>
+                            <ul class="main_list">
+                                <li class="main_list-item">
+                                    <i class="icon-circle icon"></i>
+                                    Survey & Research
+                                </li>
+                                <li class="main_list-item">
+                                    <i class="icon-circle icon"></i>
+                                    Planning & Supply Chain
+                                </li>
+                                <li class="main_list-item">
+                                    <i class="icon-circle icon"></i>
+                                    Setup & Reporting
+                                </li>
+                                <li class="main_list-item">
+                                    <i class="icon-circle icon"></i>
+                                    Bug Fixes
+                                </li>
+                            </ul>
+                            <a class="main_btn btn btn--neon" href="service.html">Read More About</a>
+                        </div>
+                    </li>
+                    <li class="services_list-item">
+                        <div class="media">
+                            <picture>
+                                <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" type="image/webp" />
+                                <img
+                                    class="lazy"
+                                    data-src="img/placeholder.jpg"
+                                    src="img/placeholder.jpg"
+                                    alt="Optimization"
+                                />
+                            </picture>
+                            <span class="media_icon">
+                                <i class="icon-cloud icon"></i>
+                            </span>
+                        </div>
+                        <div class="main">
+                            <h4 class="main_title">Optimization</h4>
+                            <p class="main_text">Duis in hendrerit lacus. Sed fringilla blandit arcu, ac lacinia massa pellentesque ut.</p>
+                            <ul class="main_list">
+                                <li class="main_list-item">
+                                    <i class="icon-circle icon"></i>
+                                    Security Design
+                                </li>
+                                <li class="main_list-item">
+                                    <i class="icon-circle icon"></i>
+                                    System Perfomance Monitoring
+                                </li>
+                                <li class="main_list-item">
+                                    <i class="icon-circle icon"></i>
+                                    SEO Strategies
+                                </li>
+                                <li class="main_list-item">
+                                    <i class="icon-circle icon"></i>
+                                    SSL Certificate (HTTPs) Enforceability
+                                </li>
+                            </ul>
+                            <a class="main_btn btn btn--neon" href="service.html">Read More About</a>
+                        </div>
+                    </li>
+                    <li class="services_list-item">
+                        <div class="media">
+                            <picture>
+                                <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" type="image/webp" />
+                                <img
+                                    class="lazy"
+                                    data-src="img/placeholder.jpg"
+                                    src="img/placeholder.jpg"
+                                    alt="Content Tracking"
+                                />
+                            </picture>
+                            <span class="media_icon">
+                                <i class="icon-filesearch icon"></i>
+                            </span>
+                        </div>
+                        <div class="main">
+                            <h4 class="main_title">Content Tracking</h4>
+                            <p class="main_text">Phasellus fringilla dignissim diam. Duis nec tempus ligula. Curabitur vel pretium.</p>
+                            <ul class="main_list">
+                                <li class="main_list-item">
+                                    <i class="icon-circle icon"></i>
+                                    Guest Posting
+                                </li>
+                                <li class="main_list-item">
+                                    <i class="icon-circle icon"></i>
+                                    Content Research
+                                </li>
+                                <li class="main_list-item">
+                                    <i class="icon-circle icon"></i>
+                                    SEO Strategies
+                                </li>
+                                <li class="main_list-item">
+                                    <i class="icon-circle icon"></i>
+                                    Native Advertising
+                                </li>
+                            </ul>
+                            <a class="main_btn btn btn--neon" href="service.html">Read More About</a>
+                        </div>
+                    </li>
+                    <li class="services_list-item">
+                        <div class="media">
+                            <picture>
+                                <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" type="image/webp" />
+                                <img
+                                    class="lazy"
+                                    data-src="img/placeholder.jpg"
+                                    src="img/placeholder.jpg"
+                                    alt="Risk Management"
+                                />
+                            </picture>
+                            <span class="media_icon">
+                                <i class="icon-protect icon"></i>
+                            </span>
+                        </div>
+                        <div class="main">
+                            <h4 class="main_title">Risk Management</h4>
+                            <p class="main_text">Phasellus fringilla dignissim diam. Duis nec tempus ligula. Curabitur vel pretium.</p>
+                            <ul class="main_list">
+                                <li class="main_list-item">
+                                    <i class="icon-circle icon"></i>
+                                    Real Time Risk Monitoring
+                                </li>
+                                <li class="main_list-item">
+                                    <i class="icon-circle icon"></i>
+                                    LoDDoS - DDOS Testing Tool
+                                </li>
+                                <li class="main_list-item">
+                                    <i class="icon-circle icon"></i>
+                                    Technical Support Services
+                                </li>
+                                <li class="main_list-item">
+                                    <i class="icon-circle icon"></i>
+                                    Secure File Management System
+                                </li>
+                            </ul>
+                            <a class="main_btn btn btn--neon" href="service.html">Read More About</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="stripe d-flex align-items-center">
+                <div class="stripe_block d-none d-sm-flex align-items-center">
+                    <span class="stripe_block-icon">
+                        <i class="icon-arrow-left icon"></i>
+                    </span>
+                    <ul class="stripe_block-list d-flex flex-column">
+                        <li>1000+ Partners,</li>
+                        <li>1700+ Investors,</li>
+                        <li>160+ Clients</li>
+                    </ul>
+                </div>
+                <div class="ticker h3" id="ticker"></div>
+                <!--  ticker content changes here  -->
+                <div class="d-none">
+                    <span class="ticker-item">FRD Company</span>
+                    <span class="ticker-item">Cryptochain</span>
+                    <span class="ticker-item">SMMHelper</span>
+                    <span class="ticker-item">Innovation Line</span>
+                    <span class="ticker-item">Basic Data</span>
+                </div>
+                <!--  ticker content changes here  -->
+            </div>
+        </main>
+        <!-- services content end -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_top">
+                    <a class="logo footer_top-logo d-inline-flex align-items-center" href="index.html">
+                        <span class="logo_icon">
+                            <img src="svg/logo.svg" alt="Sitech" />
+                        </span>
+                        <span class="logo_text h2">Sitech</span>
+                    </a>
+                    <ul class="footer_top-nav d-flex flex-wrap">
+                        <li class="footer_top-nav_link">
+                            <a class="link h5" href="about.html">
+                                About
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                        </li>
+                        <li class="footer_top-nav_link">
+                            <a class="link h5" href="services.html">
+                                Services
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                        </li>
+                        <li class="footer_top-nav_link">
+                            <a class="link h5" href="contact.html">
+                                Contact
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <div class="footer_bottom-contacts d-flex flex-column">
+                        <a class="link" href="mailto:example@domain.com">sitechcompany@email.com</a>
+                        <a class="link" href="tel:+1234567890">+1 202 303 404</a>
+                    </div>
+                    <div class="footer_bottom-socials">
+                        <ul class="footer_bottom-socials_list socials d-flex flex-wrap">
+                            <li class="socials-item">
+                                <a class="link" href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-facebook icon"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="link" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-instagram icon"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="link" href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-twitter icon"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="link" href="https://soundcloud.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-soundcloud icon"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="link" href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-youtube-play icon"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-linkedin icon"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="link" href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-whatsapp icon"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="link" href="https://snapchat.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-snapchat-ghost icon"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="link" href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-tiktok icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="footer_copyright">Copyright &copy; <span id="currentYear"></span> Sitech by Merkulove</p>
+            </div>
+            <a class="footer_scroll" id="scrollToTop" href="#">
+                <i class="icon-arrow-up icon"></i>
+            </a>
+        </footer>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="js/common.min.js"></script>
+        <script src="js/ticker.min.js"></script>
+    </body>
+</html>

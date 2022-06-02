@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>About Us | Sitech</title>
+        <script id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflS50iB-/www-widgetapi.js" async=""></script>
+        <script src="https://www.youtube.com/player_api"></script>
+        <link rel="stylesheet preload" as="style" href="css/preload.min.css" />
+        <link rel="stylesheet preload" as="style" href="css/icomoon.css" />
+        <link rel="stylesheet preload" as="style" href="css/libs.min.css" />
+        <link rel="stylesheet" href="css/about.min.css" />
+    </head>
+    <body>
+        <header class="header d-lg-flex align-items-center" data-page="about" data-page-parent="@@parent">
+            <div class="container d-flex align-items-center flex-wrap flex-lg-nowrap">
+                <a class="logo header_logo d-inline-flex align-items-center" href="index.html">
+                    <span class="logo_icon">
+                        <img src="svg/logo.svg" alt="Sitech" />
+                    </span>
+                    <span class="logo_text h5">Sitech</span>
+                </a>
+                <nav class="header_nav collapse" id="headerMenu">
+                    <ul class="header_nav-list">
+                        <li class="header_nav-list_item dropdown">
+                            <a
+                                class="nav-link nav-item dropdown-toggle d-flex align-items-center justify-content-between"
+                                href="index.html"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#homeMenu"
+                                data-trigger="dropdown"
+                                data-main-link="true"
+                                aria-expanded="true"
+                                aria-controls="homeMenu"
+                                data-page="home"
+                                data-page-parent="home"
+                            >
+                                <span class="nav-item_text">
+                                    Home
+                                    <i class="icon-circle icon"></i>
+                                </span>
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                            <div class="dropdown-menu collapse show" id="homeMenu">
+                                <ul class="dropdown-list">
+                                    <li class="list-item" data-main="true">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="home"
+                                            data-page-parent="home"
+                                            href="index.html"
+                                            data-main="true"
+                                        >
+                                            Home 1
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="home2" data-page-parent="home" href="index2.html">
+                                            Home 2
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item nav-link" href="about.html" data-page="about" data-single="true">
+                                <span class="nav-item_text">About</span>
+                            </a>
+                        </li>
+                        <li class="header_nav-list_item dropdown">
+                            <a
+                                class="nav-link nav-item dropdown-toggle d-flex align-items-center justify-content-between"
+                                href="services.html"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#servicesMenu"
+                                data-trigger="dropdown"
+                                data-page-parent="services"
+                                data-main-link="true"
+                                aria-expanded="false"
+                                aria-controls="servicesMenu"
+                                data-page="services"
+                            >
+                                <span class="nav-item_text">
+                                    Services
+                                    <i class="icon-circle icon"></i>
+                                </span>
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                            <div class="dropdown-menu collapse" id="servicesMenu">
+                                <ul class="dropdown-list">
+                                    <li class="list-item" data-main="true">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="services"
+                                            data-page-parent="services"
+                                            href="services.html"
+                                            data-main="true"
+                                        >
+                                            All Services
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="service"
+                                            data-page-parent="services"
+                                            href="service.html"
+                                        >
+                                            Single service
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item nav-link" href="prices.html" data-page="prices" data-single="true">
+                                <span class="nav-item_text">Prices</span>
+                            </a>
+                        </li>
+                        <li class="header_nav-list_item dropdown">
+                            <a
+                                class="nav-link nav-item dropdown-toggle d-flex align-items-center justify-content-between"
+                                href="#"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#pagesMenu"
+                                data-trigger="dropdown"
+                                data-page-parent="pages"
+                                data-main-link="true"
+                                aria-expanded="false"
+                                aria-controls="pagesMenu"
+                            >
+                                <span class="nav-item_text">
+                                    Pages
+                                    <i class="icon-circle icon"></i>
+                                </span>
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                            <div class="dropdown-menu collapse" id="pagesMenu">
+                                <ul class="dropdown-list">
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="blog" data-page-parent="pages" href="blog.html">
+                                            Blog Boxes
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="blog2" data-page-parent="pages" href="blog2.html">
+                                            Blog Sidebar
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="post" data-page-parent="pages" href="post.html">
+                                            Single post
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="faq" data-page-parent="pages" href="faq.html"> FAQ </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="404" data-page-parent="pages" href="404.html">
+                                            Error Page
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item nav-link" href="contact.html" data-page="contact" data-single="true">
+                                <span class="nav-item_text">Contact</span>
+                            </a>
+                        </li>
+                        <li class="header_nav-list_btn">
+                            <a class="btn signUpTrigger" href="#">Get a demo</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header_btn btn btn--neon signUpTrigger" href="#">Get a demo</a>
+                <button
+                    class="header_trigger"
+                    id="headerTrigger"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#headerMenu"
+                    aria-controls="headerMenu"
+                    aria-expanded="false"
+                    type="button"
+                >
+                    <i class="icon-arrow-left icon arrow-rotate"></i>
+                </button>
+            </div>
+        </header>
+        <section>
+            <div class="page_shapes"></div>
+            <div class="container">
+                
+                <div class="page_header">
+                    <h2 class="title type" data-text="About Us">Application Preview</h2>
+                    
+                    
+                </div>
+                <div class="page_slider-controls">
+                    <a class="control swiper-button-prev" href="#">
+                        <i class="icon-angle-left icon"></i>
+                    </a>
+                    <a class="control swiper-button-next" href="#">
+                        <i class="icon-angle-right icon"></i>
+                    </a>
+                </div>
+                <div class="page_slider swiper gallery">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="img/placeholder.jpg" data-role="gallery-link">
+                                <picture>
+                                    <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" type="image/webp" />
+                                    <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="About Us" />
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/placeholder.jpg" data-role="gallery-link">
+                                <picture>
+                                    <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" type="image/webp" />
+                                    <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="About Us" />
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/placeholder.jpg" data-role="gallery-link">
+                                <picture>
+                                    <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" type="image/webp" />
+                                    <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="About Us" />
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/placeholder.jpg" data-role="gallery-link">
+                                <picture>
+                                    <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" type="image/webp" />
+                                    <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="About Us" />
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about page content start -->
+        <main>
+            <!-- services section start -->
+            <div class="services">
+                <div class="container">
+                    <div class="services_content d-lg-flex align-items-center">
+                        <ul class="services_content-numbers d-flex flex-column">
+                            <li class="block">
+                                <h6 class="label">Advanced Solutions for Startups</h6>
+                                <span class="countNum h1" data-value="240" data-suffix="+">0</span>
+                            </li>
+                            <li class="block">
+                                <h6 class="label">Investors on-boarded on the platform</h6>
+                                <span class="countNum h1" data-value="1720">0</span>
+                            </li>
+                            <li class="block">
+                                <h6 class="label">Promotion cases and new products</h6>
+                                <span class="countNum h1" data-value="8100" data-suffix="+">0</span>
+                            </li>
+                        </ul>
+                        <div class="services_content-video video">
+                            <span class="cover">
+                                <picture>
+                                    <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" type="image/webp" />
+                                    <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="About our services" />
+                                </picture>
+                                <a class="video-btn btn--neon" href="#">
+                                    <i class="icon-play icon"></i>
+                                </a>
+                            </span>
+                            <iframe
+                                src="https://www.youtube.com/embed/XHOmBV4js_E?controls=0"
+                                title="YouTube video player"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                    </div>
+                    <ul class="services_list">
+                        <li class="wrapper" data-aos="fade-up">
+                            <a class="services_list-item d-flex flex-column" href="service.html">
+                                <i class="icon-chart-bar icon"></i>
+                                <span class="title h5">Data Analysis</span>
+                                <p class="text">
+                                    Phasellus fringilla tuc dignissim diam. Duis nec tempus ligula. Curabitur vel pretium. Vestibulum metus
+                                    pur esta
+                                </p>
+                            </a>
+                        </li>
+                        <li class="wrapper" data-aos="fade-up" data-aos-delay="50">
+                            <a class="services_list-item d-flex flex-column" href="service.html">
+                                <i class="icon-cloud icon"></i>
+                                <span class="title h5">Optimization</span>
+                                <p class="text">
+                                    Phasellus fringilla dignissim diam. Duis nec tempus ligula. Curabitur vel pretium. Vestibulum metus pur
+                                    esta
+                                </p>
+                            </a>
+                        </li>
+                        <li class="wrapper" data-aos="fade-up" data-aos-delay="100">
+                            <a class="services_list-item d-flex flex-column" href="service.html">
+                                <i class="icon-filesearch icon"></i>
+                                <span class="title h5">Content Track</span>
+                                <p class="text">
+                                    Phasellus fringilla tuc dignissim diam. Duis nec tempus ligula. Curabitur vel pretium. Vestibulum metus
+                                    pur esta
+                                </p>
+                            </a>
+                        </li>
+                        <li class="wrapper" data-aos="fade-up" data-aos-delay="150">
+                            <a class="services_list-item d-flex flex-column" href="service.html">
+                                <i class="icon-protect icon"></i>
+                                <span class="title h5">Risk Manage</span>
+                                <p class="text">
+                                    Phasellus fringilla dignissim diam. Duis nec tempus ligula. Curabitur vel pretium. Vestibulum metus pur
+                                    esta
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- services section end -->
+            <!-- feedback section start -->
+            <section class="feedback section">
+                <div class="feedback_shapes">
+                    <div class="shape shape--left">
+                        <img src="svg/bgshape_white2.svg" alt="shape" />
+                    </div>
+                    <div class="shape shape--right">
+                        <img src="svg/bgshape_white.svg" alt="shape" />
+                    </div>
+                </div>
+                <div class="container d-lg-flex align-items-center justify-content-between">
+                    <div class="feedback_main">
+                        <div class="feedback_main-header">
+                            <div class="wrapper">
+                                <span class="tw-height h4">
+                                    <span class="text">Ask us any</span>
+                                </span>
+                                <h4 class="feedback_main-header_title type" data-text="Ask us any">Ask us any</h4>
+                            </div>
+                            <p class="feedback_main-header_text">
+                                Suspendisse ligula magna, laoreet non egestas ac, lobortis at nulla. Suspendisse efficitur neque nec neque
+                                porttitor tincidunt. Donec iaculis lacus vitae velit finibus ullamcorper
+                            </p>
+                        </div>
+                        <form class="feedback_main-form form d-flex flex-column" action="form.php" method="post" data-type="feedback">
+                            <input class="field required" type="text" id="feedbackName" name="feedbackName" placeholder="Name" />
+                            <input
+                                class="field required"
+                                type="text"
+                                data-type="email"
+                                id="feedbackEmail"
+                                name="feedbackEmail"
+                                placeholder="E-mail"
+                            />
+                            <textarea
+                                class="field required"
+                                name="feedbackMessage"
+                                id="feedbackMessage"
+                                placeholder="Type your message here…"
+                            ></textarea>
+                            <button class="btn btn--neon" type="submit">Send</button>
+                        </form>
+                    </div>
+                    <div class="feedback_media">
+                        <div class="media">
+                            <lottie-player
+                                class="lottie"
+                                src="lottie/paperplane.json"
+                                background="transparent"
+                                speed=".5"
+                                style="width: 100%; height: 100%"
+                                loop
+                                autoplay
+                            ></lottie-player>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- feedback section end -->
+            <!--  recent post section start  -->
+            <section class="recent section">
+                <div class="container">
+                    <div class="recent_header d-flex justify-content-between align-items-start">
+                        <span class="tw-height h4">
+                            <span class="text">Recent Posts</span>
+                        </span>
+                        <h4 class="recent_header-title type" data-text="Recent Posts">Recent Posts</h4>
+                        <div class="recent_controls">
+                            <a class="recent_controls-control swiper-button-prev" href="#">
+                                <i class="icon-angle-left icon"></i>
+                            </a>
+                            <a class="recent_controls-control swiper-button-next" href="#">
+                                <i class="icon-angle-right icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="recent_posts swiper">
+                        <div class="swiper-wrapper">
+                            <div class="recent_posts-item post-item swiper-slide">
+                                <div class="main">
+                                    <a class="main_title h5" href="post.html">
+                                        Amazing VR App Turns Any Room Into A Mixed Reality Stargazing Lounge
+                                    </a>
+                                    <div class="main_meta d-flex flex-wrap align-items-center">
+                                        <span class="main_meta-bookmark">
+                                            <i class="icon-bookmark icon"></i>
+                                        </span>
+
+                                        <p class="main_meta-item">02 Jan 2022</p>
+                                        <p class="main_meta-item">by Emily Smith</p>
+                                        <p class="main_meta-item">2 Comments</p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" type="image/webp" />
+                                        <img
+                                            class="lazy"
+                                            data-src="img/placeholder.jpg"
+                                            src="img/placeholder.jpg"
+                                            alt="Amazing VR App Turns Any Room Into A Mixed Reality Stargazing Lounge"
+                                        />
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="recent_posts-item post-item swiper-slide">
+                                <div class="main">
+                                    <a class="main_title h5" href="post.html">
+                                        Customer Success 101: How to Power Up Your Startup’s Growth in New 2022 Season
+                                    </a>
+                                    <div class="main_meta d-flex flex-wrap align-items-center">
+                                        <p class="main_meta-item">02 Jan 2022</p>
+                                        <p class="main_meta-item">by Emily Smith</p>
+                                        <p class="main_meta-item">No Comments</p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" type="image/webp" />
+                                        <img
+                                            class="lazy"
+                                            data-src="img/placeholder.jpg"
+                                            src="img/placeholder.jpg"
+                                            alt="Customer Success 101: How to Power Up Your Startup’s Growth in New 2022 Season"
+                                        />
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="recent_posts-item post-item swiper-slide">
+                                <div class="main">
+                                    <a class="main_title h5" href="post.html">
+                                        How to Build, Improve and Pivot a Minimum Viable Saas Product for Marketing
+                                    </a>
+                                    <div class="main_meta d-flex flex-wrap align-items-center">
+                                        <p class="main_meta-item">02 Jan 2022</p>
+                                        <p class="main_meta-item">by Emily Smith</p>
+                                        <p class="main_meta-item">3 Comments</p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" type="image/webp" />
+                                        <img
+                                            class="lazy"
+                                            data-src="img/placeholder.jpg"
+                                            src="img/placeholder.jpg"
+                                            alt="How to Build, Improve and Pivot a Minimum Viable Saas Product for Marketing"
+                                        />
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="recent_posts-item post-item swiper-slide">
+                                <div class="main">
+                                    <a class="main_title h5" href="post.html">
+                                        We Share Research and Inspiration of Physical and Online Spaces That Are Public-friendly
+                                    </a>
+                                    <div class="main_meta d-flex flex-wrap align-items-center">
+                                        <p class="main_meta-item">02 Jan 2022</p>
+                                        <p class="main_meta-item">by Emily Smith</p>
+                                        <p class="main_meta-item">No Comments</p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" type="image/webp" />
+                                        <img
+                                            class="lazy"
+                                            data-src="img/placeholder.jpg"
+                                            src="img/placeholder.jpg"
+                                            alt="We Share Research and Inspiration of Physical and Online Spaces That Are Public-friendly"
+                                        />
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="recent_posts-item post-item swiper-slide">
+                                <div class="main">
+                                    <a class="main_title h5" href="post.html">
+                                        The Ultimate Guide to Saas Pricing Models, Strategies & Psychological Hacks
+                                    </a>
+                                    <div class="main_meta d-flex flex-wrap align-items-center">
+                                        <p class="main_meta-item">02 Jan 2022</p>
+                                        <p class="main_meta-item">by Emily Smith</p>
+                                        <p class="main_meta-item">no Comments</p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" type="image/webp" />
+                                        <img
+                                            class="lazy"
+                                            data-src="img/placeholder.jpg"
+                                            src="img/placeholder.jpg"
+                                            alt="The Ultimate Guide to Saas Pricing Models, Strategies & Psychological Hacks"
+                                        />
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="recent_posts-item post-item swiper-slide">
+                                <div class="main">
+                                    <a class="main_title h5" href="post.html">
+                                        How to Implement and Operate Asset Performance Management Efficiently
+                                    </a>
+                                    <div class="main_meta d-flex flex-wrap align-items-center">
+                                        <p class="main_meta-item">02 Jan 2022</p>
+                                        <p class="main_meta-item">by Emily Smith</p>
+                                        <p class="main_meta-item">no Comments</p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" type="image/webp" />
+                                        <img
+                                            class="lazy"
+                                            data-src="img/placeholder.jpg"
+                                            src="img/placeholder.jpg"
+                                            alt="How to Implement and Operate Asset Performance Management Efficiently"
+                                        />
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--  recent post section end  -->
+        </main>
+        <!-- about page content end -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_top">
+                    <a class="logo footer_top-logo d-inline-flex align-items-center" href="index.html">
+                        <span class="logo_icon">
+                            <img src="svg/logo.svg" alt="Sitech" />
+                        </span>
+                        <span class="logo_text h2">Sitech</span>
+                    </a>
+                    <ul class="footer_top-nav d-flex flex-wrap">
+                        <li class="footer_top-nav_link">
+                            <a class="link h5" href="about.html">
+                                About
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                        </li>
+                        <li class="footer_top-nav_link">
+                            <a class="link h5" href="services.html">
+                                Services
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                        </li>
+                        <li class="footer_top-nav_link">
+                            <a class="link h5" href="contact.html">
+                                Contact
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <div class="footer_bottom-contacts d-flex flex-column">
+                        <a class="link" href="mailto:example@domain.com">sitechcompany@email.com</a>
+                        <a class="link" href="tel:+1234567890">+1 202 303 404</a>
+                    </div>
+                    <div class="footer_bottom-socials">
+                        <ul class="footer_bottom-socials_list socials d-flex flex-wrap">
+                            <li class="socials-item">
+                                <a class="link" href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-facebook icon"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="link" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-instagram icon"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="link" href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-twitter icon"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="link" href="https://soundcloud.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-soundcloud icon"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="link" href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-youtube-play icon"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-linkedin icon"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="link" href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-whatsapp icon"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="link" href="https://snapchat.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-snapchat-ghost icon"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="link" href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-tiktok icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="footer_copyright">Copyright &copy; <span id="currentYear"></span> Sitech by Merkulove</p>
+            </div>
+            <a class="footer_scroll" id="scrollToTop" href="#">
+                <i class="icon-arrow-up icon"></i>
+            </a>
+        </footer>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="js/common.min.js"></script>
+        <script src="js/ticker.min.js"></script>
+        <script src="js/about.min.js"></script>
+    </body>
+</html>

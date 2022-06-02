@@ -1,0 +1,133 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// accordion component
+
+.faq {
+    &_wrapper {
+        background: $lightgray;
+        border: 2px solid $headerColor;
+        box-shadow: $shadow;
+        padding: 20px 20px 0;
+
+        .accordion_item:last-of-type {
+            border-bottom: 0;
+        }
+    }
+}
+
+.accordion {
+    &_item {
+        border-bottom: 2px solid $bodyText;
+
+        &:first-of-type {
+            .accordion_item-wrapper .title {
+                padding-top: 0;
+            }
+        }
+
+        &-wrapper {
+            .title {
+                padding: 25px 0;
+                transition: .4s ease-in-out;
+                cursor: pointer;
+
+                &[aria-expanded="true"] {
+                    padding-bottom: 15px;
+                }
+
+                &_icon {
+                    margin-left: 30px;
+                    font-size: 24px;
+
+                    &.transform {
+                        .icon {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+
+            .body {
+                margin-bottom: 30px;
+
+                .main {
+                    &_text {
+                        margin-left: -50px;
+                    }
+
+                    &_general {
+                        margin-bottom: 16px;
+                    }
+
+                    &_list {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px 0;
+
+                        &-item {
+                            display: flex;
+                            align-items: flex-start;
+
+                            .number {
+                                background: $accent;
+                                margin-right: 15px;
+                                width: 35px;
+                                height: 30px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 14px;
+                                line-height: 1;
+                                font-weight: 700;
+                                font-family: $headerFont;
+                                color: $headerColor;
+                            }
+
+                            .main {
+                                width: calc(100% - 35px - 15px);
+
+                                &_title {
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 413.98px) {
+    .accordion_item-wrapper .body .main_text {
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .faq {
+        &_wrapper {
+            padding: 40px 40px 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .faq {
+        &_wrapper {
+            padding: 80px 80px 55px;
+        }
+    }
+}

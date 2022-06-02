@@ -1,0 +1,155 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// hero section
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    padding: 60px 0 0;
+
+    &_bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100vw;
+        height: 100vh;
+
+        &-blue {
+            height: 100%;
+            position: relative;
+            z-index: 1;
+        }
+
+        &-line {
+            position: absolute;
+            top: 0;
+            z-index: 2;
+        }
+    }
+
+    .container {
+        position: relative;
+        z-index: 20;
+    }
+
+    &_media {
+        .oval {
+            display: none;
+        }
+    }
+
+    &_main {
+        color: #fff;
+        margin-bottom: 40px;
+
+        .tw-height {
+            display: block;
+            max-width: 660px;
+            opacity: 0;
+        }
+
+        &-title {
+            color: #fff;
+        }
+
+        &-text {
+            position: relative;
+            margin: 25px 0 30px;
+            padding-top: 25px;
+            font-weight: 600;
+
+            &:before {
+                content: '';
+                @include caret;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 575.98px) {
+    .hero {
+        &_main {
+            &-btn {
+                width: 250px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .hero {
+        padding-top: 100px;
+
+        &_main {
+            &-text {
+                max-width: 640px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .hero {
+        padding-top: 190px;
+
+        &_media {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        &_main {
+            &-title {
+                max-width: 600px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .hero {
+        padding-top: 190px;
+        min-height: unset;
+        height: 830px;
+
+        &_main {
+            margin-bottom: 0;
+            min-width: 640px;
+        }
+
+        &_media {
+            position: absolute;
+            top: -165px;
+            right: -37%;
+            max-height: 700px;
+            width: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 1399.98px) {
+    .hero {
+        &_bg {
+            max-height: 830px;
+
+            &-blue {
+                max-height: 960px;
+                width: auto;
+            }
+        }
+    }
+}

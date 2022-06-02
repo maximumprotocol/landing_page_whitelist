@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Prices | Sitech</title>
+        <script id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflS50iB-/www-widgetapi.js" async=""></script>
+        <script src="https://www.youtube.com/player_api"></script>
+        <link rel="stylesheet preload" as="style" href="css/preload.min.css" />
+        <link rel="stylesheet preload" as="style" href="css/icomoon.css" />
+        <link rel="stylesheet preload" as="style" href="css/libs.min.css" />
+        <link rel="stylesheet" href="css/prices.min.css" />
+    </head>
+    <body>
+        <header class="header d-lg-flex align-items-center" data-page="prices" data-page-parent="@@parent">
+            <div class="container d-flex align-items-center flex-wrap flex-lg-nowrap">
+                <a class="logo header_logo d-inline-flex align-items-center" href="index.html">
+                    <span class="logo_icon">
+                        <img src="svg/logo.svg" alt="Sitech" />
+                    </span>
+                    <span class="logo_text h5">Sitech</span>
+                </a>
+                <nav class="header_nav collapse" id="headerMenu">
+                    <ul class="header_nav-list">
+                        <li class="header_nav-list_item dropdown">
+                            <a
+                                class="nav-link nav-item dropdown-toggle d-flex align-items-center justify-content-between"
+                                href="index.html"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#homeMenu"
+                                data-trigger="dropdown"
+                                data-main-link="true"
+                                aria-expanded="true"
+                                aria-controls="homeMenu"
+                                data-page="home"
+                                data-page-parent="home"
+                            >
+                                <span class="nav-item_text">
+                                    Home
+                                    <i class="icon-circle icon"></i>
+                                </span>
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                            <div class="dropdown-menu collapse show" id="homeMenu">
+                                <ul class="dropdown-list">
+                                    <li class="list-item" data-main="true">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="home"
+                                            data-page-parent="home"
+                                            href="index.html"
+                                            data-main="true"
+                                        >
+                                            Home 1
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="home2" data-page-parent="home" href="index2.html">
+                                            Home 2
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item nav-link" href="about.html" data-page="about" data-single="true">
+                                <span class="nav-item_text">About</span>
+                            </a>
+                        </li>
+                        <li class="header_nav-list_item dropdown">
+                            <a
+                                class="nav-link nav-item dropdown-toggle d-flex align-items-center justify-content-between"
+                                href="services.html"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#servicesMenu"
+                                data-trigger="dropdown"
+                                data-page-parent="services"
+                                data-main-link="true"
+                                aria-expanded="false"
+                                aria-controls="servicesMenu"
+                                data-page="services"
+                            >
+                                <span class="nav-item_text">
+                                    Services
+                                    <i class="icon-circle icon"></i>
+                                </span>
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                            <div class="dropdown-menu collapse" id="servicesMenu">
+                                <ul class="dropdown-list">
+                                    <li class="list-item" data-main="true">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="services"
+                                            data-page-parent="services"
+                                            href="services.html"
+                                            data-main="true"
+                                        >
+                                            All Services
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="service"
+                                            data-page-parent="services"
+                                            href="service.html"
+                                        >
+                                            Single service
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item nav-link" href="prices.html" data-page="prices" data-single="true">
+                                <span class="nav-item_text">Prices</span>
+                            </a>
+                        </li>
+                        <li class="header_nav-list_item dropdown">
+                            <a
+                                class="nav-link nav-item dropdown-toggle d-flex align-items-center justify-content-between"
+                                href="#"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#pagesMenu"
+                                data-trigger="dropdown"
+                                data-page-parent="pages"
+                                data-main-link="true"
+                                aria-expanded="false"
+                                aria-controls="pagesMenu"
+                            >
+                                <span class="nav-item_text">
+                                    Pages
+                                    <i class="icon-circle icon"></i>
+                                </span>
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                            <div class="dropdown-menu collapse" id="pagesMenu">
+                                <ul class="dropdown-list">
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="blog" data-page-parent="pages" href="blog.html">
+                                            Blog Boxes
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="blog2" data-page-parent="pages" href="blog2.html">
+                                            Blog Sidebar
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="post" data-page-parent="pages" href="post.html">
+                                            Single post
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="faq" data-page-parent="pages" href="faq.html"> FAQ </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="404" data-page-parent="pages" href="404.html">
+                                            Error Page
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item nav-link" href="contact.html" data-page="contact" data-single="true">
+                                <span class="nav-item_text">Contact</span>
+                            </a>
+                        </li>
+                        <li class="header_nav-list_btn">
+                            <a class="btn signUpTrigger" href="#">Get a demo</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header_btn btn btn--neon signUpTrigger" href="#">Get a demo</a>
+                <button
+                    class="header_trigger"
+                    id="headerTrigger"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#headerMenu"
+                    aria-controls="headerMenu"
+                    aria-expanded="false"
+                    type="button"
+                >
+                    <i class="icon-arrow-left icon arrow-rotate"></i>
+                </button>
+            </div>
+        </header>
+        <header class="page">
+            <div class="page_animation">
+                <lottie-player
+                    src="lottie/code.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 100%; height: 100%"
+                    loop
+                    autoplay
+                ></lottie-player>
+            </div>
+            <div class="container">
+                <ul class="breadcrumbs d-flex flex-wrap">
+                    <li class="breadcrumbs_item">
+                        <a class="link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="breadcrumbs_item current">
+                        <span id="currentpage">Prices</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="container d-xl-flex">
+                <div class="page_main">
+                    <div class="wrapper">
+                        <span class="tw-height h2">
+                            <span class="text">Solutions for Your business</span>
+                        </span>
+                        <h2 class="page_main-title type" data-text="Solutions for Your business">Solutions for Your business</h2>
+                    </div>
+                    <a class="page_main-btn btn btn--white" href="contact.html">Get Free Consultation</a>
+                </div>
+                <div class="page_media">
+                    <img class="page_media-arrow" src="svg/arrow.svg" alt="Solutions for Your business" />
+                    <picture>
+                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" type="image/webp" />
+                        <img
+                            class="page_media-image lazy"
+                            data-src="img/placeholder.jpg"
+                            src="img/placeholder.jpg"
+                            alt="Solutions for Your business"
+                        />
+                    </picture>
+                </div>
+            </div>
+        </header>
+        <!-- prices content start -->
+        <main>
+            <!-- pricing section start -->
+            <section class="pricing section">
+                <div class="container">
+                    <div class="pricing_header">
+                        <h4 class="pricing_header-title">Base Model Prices</h4>
+                        <p class="pricing_header-text">
+                            Simple and flexible. Only pay for what you use. For your small-to medium-sized companies
+                        </p>
+                    </div>
+                    <ul class="pricing_list d-flex flex-column flex-md-row flex-wrap">
+                        <li class="pricing_list-item">
+                            <div class="pricing_list-item_header">
+                                <h5 class="title">Free</h5>
+                                <span class="price">
+                                    <span class="sign">$</span>
+                                    <span class="int">0</span>
+                                    <span class="float">00</span>
+                                </span>
+                                <p class="label">For the teams wanting to try out services for trial period</p>
+                            </div>
+                            <ul class="pricing_list-item_list">
+                                <li class="list-item">
+                                    <i class="icon-circle icon"></i>
+                                    Planning & Supply Chain
+                                </li>
+                                <li class="list-item">
+                                    <i class="icon-circle icon"></i>
+                                    Guest Posting
+                                </li>
+                                <li class="list-item">
+                                    <i class="icon-circle icon"></i>
+                                    SEO optimization
+                                </li>
+                                <li class="list-item">
+                                    <i class="icon-circle icon"></i>
+                                    Content tracking
+                                </li>
+                            </ul>
+                            <span class="btn btn--white current">Current Plan</span>
+                        </li>
+                        <li class="pricing_list-item">
+                            <div class="media">
+                                <img class="media_left" src="svg/Illustration-2.svg" alt="Our Pricing" />
+                                <img class="media_right" src="svg/puzzle.svg" alt="Our Pricing" />
+                            </div>
+                            <div class="pricing_list-item_header">
+                                <h5 class="title">Standard</h5>
+                                <span class="price">
+                                    <span class="sign">$</span>
+                                    <span class="int">10</span>
+                                    <span class="float">50</span>
+                                </span>
+                                <p class="label">one active project per month billed annually</p>
+                            </div>
+                            <ul class="pricing_list-item_list">
+                                <li class="list-item">
+                                    <i class="icon-circle icon"></i>
+                                    Planning & Supply Chain
+                                </li>
+                                <li class="list-item">
+                                    <i class="icon-circle icon"></i>
+                                    Guest Posting
+                                </li>
+                                <li class="list-item">
+                                    <i class="icon-circle icon"></i>
+                                    SEO optimization
+                                </li>
+                                <li class="list-item">
+                                    <i class="icon-circle icon"></i>
+                                    Content tracking
+                                </li>
+                                <li class="list-item">
+                                    <i class="icon-circle icon"></i>
+                                    Setup & Reporting
+                                </li>
+                            </ul>
+                            <a class="btn btn--neon signUpTrigger" href="#">Upgrade Plan</a>
+                        </li>
+                        <li class="pricing_list-item">
+                            <div class="pricing_list-item_header">
+                                <h5 class="title">Advanced</h5>
+                                <span class="price">
+                                    <span class="sign">$</span>
+                                    <span class="int">15</span>
+                                    <span class="float">00</span>
+                                </span>
+                                <p class="label">For the teams wanting to try out services for split projects</p>
+                            </div>
+                            <ul class="pricing_list-item_list">
+                                <li class="list-item">
+                                    <i class="icon-circle icon"></i>
+                                    Planning & Supply Chain
+                                </li>
+                                <li class="list-item">
+                                    <i class="icon-circle icon"></i>
+                                    Real Time Risk Monitoring
+                                </li>
+                                <li class="list-item">
+                                    <i class="icon-circle icon"></i>
+                                    SEO strategies
+                                </li>
+                                <li class="list-item">
+                                    <i class="icon-circle icon"></i>
+                                    System Performance Monitoring
+                                </li>
+                                <li class="list-item">
+                                    <i class="icon-circle icon"></i>
+                                    Technical Support Services
+                                </li>
+                            </ul>
+                            <a class="btn btn--neon signUpTrigger" href="#">Upgrade Plan</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- pricing section end -->
+            <!-- challenges section start -->
+            <section class="challenges section">
+                <div class="challenges_shapes">
+                    <div class="half half--left">
+                        <span class="circle"></span>
+                        <img class="shape" src="svg/barshape.svg" alt="Your Challenges" />
+                    </div>
+                    <div class="half half--right">
+                        <img class="shape" src="svg/speaker.svg" alt="Your Challenges" />
+                        <span class="circle circle--big"></span>
+                        <span class="circle circle--small"></span>
+                    </div>
+                </div>
+
+                <div class="container d-lg-flex align-items-center">
+                    <div class="challenges_header">
+                        <h3 class="challenges_header-title d-flex align-items-end">
+                            <span class="text">Your Challenges</span>
+                            <i class="icon-arrow-left icon arrow-rotate"></i>
+                        </h3>
+                        <p class="challenges_header-text">
+                            Nullam elementum, magna at suscipit lobortis, dui nibh molestie enim, sed scelerisque ex odio sit amet purus.
+                            Pellentesque fermentum mauris
+                        </p>
+                    </div>
+                    <ul class="challenges_list d-flex flex-column flex-sm-row flex-wrap">
+                        <li class="challenges_list-item">
+                            <span class="number countNum" data-prefix="0" data-value="1">01</span>
+                            <span class="separator"></span>
+                            <h5 class="title">How and Where to Start</h5>
+                        </li>
+                        <li class="challenges_list-item">
+                            <span class="number countNum" data-prefix="0" data-value="2">02</span>
+                            <span class="separator"></span>
+                            <h5 class="title">Time to Get New Strategy</h5>
+                        </li>
+                        <li class="challenges_list-item">
+                            <span class="number countNum" data-prefix="0" data-value="3">03</span>
+                            <span class="separator"></span>
+                            <h5 class="title">Tool Selection</h5>
+                        </li>
+                        <li class="challenges_list-item">
+                            <span class="number countNum" data-prefix="0" data-value="4">04</span>
+                            <span class="separator"></span>
+                            <h5 class="title">Find the Right Place Market</h5>
+                        </li>
+                        <li class="challenges_list-item">
+                            <span class="number countNum" data-prefix="0" data-value="5">05</span>
+                            <span class="separator"></span>
+                            <h5 class="title">New System Support</h5>
+                        </li>
+                        <li class="challenges_list-item">
+                            <span class="number countNum" data-prefix="0" data-value="6">06</span>
+                            <span class="separator"></span>
+                            <h5 class="title">Take New Level of Management</h5>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- challenges section end -->
+            <!-- model section start -->
+            <section class="model section">
+                <div class="container d-xl-flex align-items-center justify-content-between">
+                    <div class="model_header">
+                        <h4 class="model_header-title">Fine-Tuned Model Prices Updates</h4>
+                        <p class="model_header-subtitle">
+                            Create your own custom models by fine-tuning our base models with your own data.
+                        </p>
+                        <p class="model_header-text">
+                            Nunc quis tellus leo. Vivamus lorem magna, tempus at suscipit quis, viverra ut dolor. Suspendisse in urna id
+                            urna facilisis dapibus ut at enim. Sed tempus tincidunt neque nec tincidunt. Nam imperdiet felis nulla
+                        </p>
+                        <a class="model_header-btn btn btn--neon" href="contact.html">Talk to Specialist</a>
+                    </div>
+                    <div class="model_table">
+                        <div class="model_table-header">
+                            <h6 class="model_table-header_label">Model</h6>
+                            <h6 class="model_table-header_label">Service</h6>
+                            <h6 class="model_table-header_label">Plan Advanced bills</h6>
+                        </div>
+                        <div class="model_table-col">
+                            <span
+                                class="cell cell--trigger"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#workshops"
+                                aria-expanded="true"
+                                role="button"
+                            >
+                                <span class="label">Workshops</span>
+                                <i class="icon-angle-left icon"></i>
+                            </span>
+                            <div class="cell-collapse collapse show" id="workshops">
+                                <span class="cell">
+                                    <span class="cell-label">Service</span>
+                                    <span class="cell-content">LoDDoS - DDOS Testing Tool</span>
+                                </span>
+                                <span class="cell">
+                                    <span class="cell-label">Plan Advanced bills</span>
+                                    <span class="cell-content">$0.20/billed</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="model_table-col">
+                            <span
+                                class="cell cell--trigger"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#dev"
+                                aria-expanded="false"
+                                role="button"
+                            >
+                                <span class="label">Model Development</span>
+                                <i class="icon-angle-left icon"></i>
+                            </span>
+                            <div class="cell-collapse collapse" id="dev">
+                                <span class="cell">
+                                    <span class="cell-label">Service</span>
+                                    <span class="cell-content">System Performance Monitoring</span>
+                                </span>
+                                <span class="cell">
+                                    <span class="cell-label">Plan Advanced bills</span>
+                                    <span class="cell-content">$2.60/billed</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="model_table-col">
+                            <span
+                                class="cell cell--trigger"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#consulting"
+                                aria-expanded="false"
+                                role="button"
+                            >
+                                <span class="label">Ongoing Consulting</span>
+                                <i class="icon-angle-left icon"></i>
+                            </span>
+                            <div class="cell-collapse collapse" id="consulting">
+                                <span class="cell">
+                                    <span class="cell-label">Service</span>
+                                    <span class="cell-content">Technical Support Services</span>
+                                </span>
+                                <span class="cell">
+                                    <span class="cell-label">Plan Advanced bills</span>
+                                    <span class="cell-content">$12/billed</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="model_table-col">
+                            <span
+                                class="cell cell--trigger"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#startup"
+                                aria-expanded="false"
+                                role="button"
+                            >
+                                <span class="label">For Startups</span>
+                                <i class="icon-angle-left icon"></i>
+                            </span>
+                            <div class="cell-collapse collapse" id="startup">
+                                <span class="cell">
+                                    <span class="cell-label">Service</span>
+                                    <span class="cell-content">Bug Monitoring and realtime fixes</span>
+                                </span>
+                                <span class="cell">
+                                    <span class="cell-label">Plan Advanced bills</span>
+                                    <span class="cell-content">$18/billed</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- model section end -->
+            <!-- services section start -->
+            <div class="services">
+                <div class="stripe d-flex align-items-center">
+                    <div class="stripe_block d-none d-sm-flex align-items-center">
+                        <span class="stripe_block-icon">
+                            <i class="icon-arrow-left icon"></i>
+                        </span>
+                        <ul class="stripe_block-list d-flex flex-column">
+                            <li>1000+ Partners,</li>
+                            <li>1700+ Investors,</li>
+                            <li>160+ Clients</li>
+                        </ul>
+                    </div>
+                    <div class="ticker h3" id="ticker"></div>
+                    <!--  ticker content changes here  -->
+                    <div class="d-none">
+                        <span class="ticker-item">FRD Company</span>
+                        <span class="ticker-item">Cryptochain</span>
+                        <span class="ticker-item">SMMHelper</span>
+                        <span class="ticker-item">Innovation Line</span>
+                        <span class="ticker-item">Basic Data</span>
+                    </div>
+                    <!--  ticker content changes here  -->
+                </div>
+
+                <div class="container">
+                    <ul class="services_list">
+                        <li class="wrapper" data-aos="fade-up">
+                            <a class="services_list-item d-flex flex-column" href="service.html">
+                                <i class="icon-chart-bar icon"></i>
+                                <span class="title h5">Data Analysis</span>
+                                <p class="text">
+                                    Phasellus fringilla tuc dignissim diam. Duis nec tempus ligula. Curabitur vel pretium. Vestibulum metus
+                                    pur esta
+                                </p>
+                            </a>
+                        </li>
+                        <li class="wrapper" data-aos="fade-up" data-aos-delay="50">
+                            <a class="services_list-item d-flex flex-column" href="service.html">
+                                <i class="icon-cloud icon"></i>
+                                <span class="title h5">Optimization</span>
+                                <p class="text">
+                                    Phasellus fringilla dignissim diam. Duis nec tempus ligula. Curabitur vel pretium. Vestibulum metus pur
+                                    esta
+                                </p>
+                            </a>
+                        </li>
+                        <li class="wrapper" data-aos="fade-up" data-aos-delay="100">
+                            <a class="services_list-item d-flex flex-column" href="service.html">
+                                <i class="icon-filesearch icon"></i>
+                                <span class="title h5">Content Track</span>
+                                <p class="text">
+                                    Phasellus fringilla tuc dignissim diam. Duis nec tempus ligula. Curabitur vel pretium. Vestibulum metus
+                                    pur esta
+                                </p>
+                            </a>
+                        </li>
+                        <li class="wrapper" data-aos="fade-up" data-aos-delay="150">
+                            <a class="services_list-item d-flex flex-column" href="service.html">
+                                <i class="icon-protect icon"></i>
+                                <span class="title h5">Risk Manage</span>
+                                <p class="text">
+                                    Phasellus fringilla dignissim diam. Duis nec tempus ligula. Curabitur vel pretium. Vestibulum metus pur
+                                    esta
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- services section end -->
+        </main>
+        <!-- prices content end -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_top">
+                    <a class="logo footer_top-logo d-inline-flex align-items-center" href="index.html">
+                        <span class="logo_icon">
+                            <img src="svg/logo.svg" alt="Sitech" />
+                        </span>
+                        <span class="logo_text h2">Sitech</span>
+                    </a>
+                    <ul class="footer_top-nav d-flex flex-wrap">
+                        <li class="footer_top-nav_link">
+                            <a class="link h5" href="about.html">
+                                About
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                        </li>
+                        <li class="footer_top-nav_link">
+                            <a class="link h5" href="services.html">
+                                Services
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                        </li>
+                        <li class="footer_top-nav_link">
+                            <a class="link h5" href="contact.html">
+                                Contact
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <div class="footer_bottom-contacts d-flex flex-column">
+                        <a class="link" href="mailto:example@domain.com">sitechcompany@email.com</a>
+                        <a class="link" href="tel:+1234567890">+1 202 303 404</a>
+                    </div>
+                    <div class="footer_bottom-socials">
+                        <ul class="footer_bottom-socials_list socials d-flex flex-wrap">
+                            <li class="socials-item">
+                                <a class="link" href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-facebook icon"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="link" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-instagram icon"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="link" href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-twitter icon"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="link" href="https://soundcloud.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-soundcloud icon"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="link" href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-youtube-play icon"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-linkedin icon"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="link" href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-whatsapp icon"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="link" href="https://snapchat.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-snapchat-ghost icon"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="link" href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-tiktok icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="footer_copyright">Copyright &copy; <span id="currentYear"></span> Sitech by Merkulove</p>
+            </div>
+            <a class="footer_scroll" id="scrollToTop" href="#">
+                <i class="icon-arrow-up icon"></i>
+            </a>
+        </footer>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="js/common.min.js"></script>
+        <script src="js/ticker.min.js"></script>
+    </body>
+</html>

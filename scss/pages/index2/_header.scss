@@ -1,0 +1,220 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// page header (hero)
+
+.page {
+    background: url('../img/index2/bg.jpg') center right no-repeat / cover, $primary;
+    background-blend-mode: overlay;
+    padding: 60px 0;
+
+    &_shapes, &_bg {
+        display: none;
+    }
+
+    &_main {
+        &-subtitle, &-title {
+            color: #fff;
+        }
+
+        .wrapper {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        &-subtitle {
+            position: relative;
+            padding-bottom: 33px;
+            margin-bottom: 10px;
+
+            &:before {
+                content: '';
+                @include caret;
+                bottom: 0;
+                left: 0;
+            }
+        }
+
+        &-action {
+            gap: 30px 0;
+
+            .play-wrapper {
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.3px;
+                text-transform: uppercase;
+
+                color: #8054D4;
+
+                .btn {
+                    position: static;
+                    transform: none;
+                    width: 48px;
+                    height: 48px;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 575.98px) {
+    .page {
+        &_main {
+            &-action {
+                gap: 0 50px;
+
+                .btn {
+                    &:not(&.video-btn) {
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .page {
+        padding: 100px 0;
+
+        &_main {
+            max-width: 640px;
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .page {
+        padding-bottom: 120px;
+
+        &_main {
+            max-width: 725px;
+            &-action {
+                gap: 0 30px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .page {
+        padding: 140px 0 260px;
+        position: relative;
+        background: url('../img/index2/bg.jpg') center right no-repeat / cover;
+        background-blend-mode: unset;
+
+        &_bg {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            mix-blend-mode: hard-light;
+            background: #fff;
+        }
+
+        &_shapes {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+
+            .ball {
+                width: 634px;
+                height: 672px;
+                position: absolute;
+                right: -80px;
+                bottom: 0;
+
+                &:before {
+                    content: '';
+                    @include caret;
+                    bottom: 250px;
+                    right: 137px;
+                }
+
+            }
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+        }
+    }
+}
+
+@media screen and (min-width: 1399.98px) {
+    .page {
+        &_shapes {
+            .ball {
+                right: -40px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1599.98px) {
+    .page {
+        &_shapes {
+            .ball {
+                right: 60px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1799.98px) {
+    .page {
+        &_shapes {
+            .ball {
+                right: 180px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1999.98px) {
+    .page {
+        &_shapes {
+            .ball {
+                right: 260px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 2199.98px) {
+    .page {
+        &_shapes {
+            .ball {
+                right: 340px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .page {
+        &_shapes {
+            .ball {
+                right: 400px;
+            }
+        }
+    }
+}

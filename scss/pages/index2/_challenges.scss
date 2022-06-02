@@ -1,0 +1,86 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// challenges section
+
+.challenges {
+    background: $primary;
+    color: #fff;
+
+    &_header {
+        &-title {
+            color: #fff;
+        }
+    }
+
+    &_list {
+        &-item {
+            .title {
+                color: #fff;
+            }
+
+            .separator {
+                background: #fff;
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 1399.98px) {
+    .challenges {
+        &_shapes {
+            .half {
+                &--right {
+                    .circle {
+                        &--big {
+                            width: 142px;
+                            height: 142px;
+                            background: #fff;
+                            border: 1px solid $headerColor;
+                            top: 70px;
+                            right: -71px;
+                        }
+                        &--small {
+                            width: 50px;
+                            height: 50px;
+                            border: 1px solid #fff;
+                            bottom: 292px;
+                            right: 121px;
+                        }
+                    }
+                }
+
+                &--left {
+                    .circle {
+                        &--big {
+                            width: 175px;
+                            height: 175px;
+                            border: 1px solid #fff;
+                            top: -80px;
+                            left: 100px;
+                        }
+                        &--small {
+                            width: 34px;
+                            height: 34px;
+                            background: #fff;
+                            border: 1px solid $headerColor;
+                            bottom: 135px;
+                            left: 170px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

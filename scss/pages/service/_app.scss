@@ -1,0 +1,185 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// app section
+
+.app {
+    padding-top: 60px;
+
+    &_shapes {
+        display: none;
+    }
+
+    &_main {
+        &-header {
+            &_text {
+                margin: 10px 0 15px;
+            }
+        }
+
+        &-list {
+            gap: 10px 0;
+
+            &_item {
+                display: flex;
+                align-items: flex-start;
+
+                .number {
+                    font-family: $headerFont;
+                    color: $headerColor;
+                    font-size: 14px;
+                    margin-right: 15px;
+                    width: 34px;
+                    height: 30px;
+                    background: $accent;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    line-height: 1;
+                }
+
+                .main {
+                    width: calc(100% - 45px);
+
+                    &_title {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    &_media {
+        height: 340px;
+        margin-bottom: 20px;
+
+        img {
+            height: 100%;
+            width: auto;
+            margin: 0 auto;
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 767.98px) {
+    .app {
+        padding-top: 100px;
+
+        &_media {
+            img {
+                margin: unset;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .app {
+        padding-top: 120px;
+
+        &_media {
+            max-width: 475px;
+            width: 100%;
+            margin-left: 30px;
+            margin-bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                margin: 0 0 0 auto;
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .app {
+        position: relative;
+
+        &_shapes {
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+
+            .oval {
+                position: absolute;
+                max-width: 105px;
+                right: 30px;
+                top: 0;
+            }
+
+            .shape--right, .group {
+                display: none;
+            }
+        }
+
+        &_media {
+            margin-left: 60px;
+        }
+    }
+}
+
+@media screen and (min-width: 1599.98px) {
+    .app {
+        &_shapes {
+            .shape--right, .group {
+                display: block;
+            }
+
+            .group {
+                position: absolute;
+                left: -363px;
+                bottom: -240px;
+
+                .shape {
+                    &--left {
+                        max-width: 590px;
+                    }
+
+                    &--oval {
+                        max-height: 124px;
+                        width: auto;
+                        position: absolute;
+                        right: 78px;
+                        top: 268px;
+                    }
+                }
+            }
+
+            .shape--right {
+                max-width: 473px;
+                position: absolute;
+                bottom: -140px;
+                right: -252px;
+                transform: rotate(20deg);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1799.98px) {
+    .app {
+        &_shapes {
+            .group {
+                left: -333px;
+            }
+        }
+    }
+}

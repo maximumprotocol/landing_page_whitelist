@@ -1,0 +1,241 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// feedback section component
+
+.feedback {
+    padding: 50px 0 45px;
+
+    &_shapes {
+        display: none;
+    }
+
+    &_main {
+        margin-bottom: 20px;
+
+        &-header {
+            margin-bottom: 30px;
+
+            .wrapper {
+                position: relative;
+            }
+
+            .tw-height {
+                padding-bottom: 30px;
+                margin-bottom: 15px;
+
+                &:before {
+                    content: '';
+                    @include caret;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+
+        &-form {
+            .field {
+                margin-bottom: 20px;
+            }
+
+            textarea.field {
+                margin-bottom: 35px;
+                height: 140px;
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 767.98px) {
+    .feedback {
+        padding: 80px 0 50px;
+
+        &_main {
+            margin-bottom: 80px;
+        }
+        &_media {
+            max-width: 50%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .feedback {
+        padding: 120px 0;
+        position: relative;
+
+        &_main {
+            margin-bottom: 0;
+            max-width: 540px;
+        }
+
+        &_media {
+            width: calc(100% - 540px);
+            height: 500px;
+            align-self: stretch;
+            position: relative;
+
+            .media {
+                position: absolute;
+                height: 100%;
+                top: 60%;
+                transform: translateY(-50%);
+                right: -6%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .feedback {
+        &_media {
+            .media {
+                right: 0;
+                height: 605px;
+                width: auto;
+                top: -40px;
+                transform: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1399.98px) {
+    .feedback {
+        position: relative;
+        overflow: visible;
+
+        .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        &_media {
+            flex-grow: 1;
+        }
+
+        &_shapes {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+
+            .shape {
+                position: absolute;
+
+                &--left {
+                    width: 684px;
+                    height: 708px;
+                    top: -106px;
+                    left: -40%;
+                }
+
+                &--right {
+                    width: 545px;
+                    height: 653px;
+                    top: 0;
+                    right: -22%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1599.98px) {
+    .feedback {
+        &_shapes {
+            .shape {
+                position: absolute;
+
+                &--left {
+                    width: 684px;
+                    height: 708px;
+                    top: 10px;
+                    left: -29%;
+                }
+
+                &--right {
+                    width: 545px;
+                    height: 653px;
+                    top: 0;
+                    right: -15%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1799.98px) {
+    .feedback {
+        &_shapes {
+            .shape {
+                &--left {
+                    left: -25%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1999.98px) {
+    .feedback {
+        &_shapes {
+            .shape {
+                &--left {
+                    left: -21%;
+                }
+
+                &--right {
+                    right: -15%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 2199.98px) {
+    .feedback {
+        &_shapes {
+            .shape {
+                &--left {
+                    left: -19%;
+                }
+
+                &--right {
+                    right: -12%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .feedback {
+        &_shapes {
+            .shape {
+                &--left {
+                    left: -16%;
+                }
+
+                &--right {
+                    right: -10%;
+                }
+            }
+        }
+    }
+}

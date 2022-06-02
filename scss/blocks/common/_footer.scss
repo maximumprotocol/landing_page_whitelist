@@ -1,0 +1,236 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// footer component
+
+.footer {
+    background: $lightgray;
+    padding: 60px 0 15px;
+    position: relative;
+
+    &_scroll {
+        position: absolute;
+        bottom: 15px;
+        right: 20px;
+        font-size: 32px;
+        line-height: 32px;
+        color: $primary;
+
+        &:hover {
+            opacity: .6;
+        }
+    }
+
+    &_top {
+        border-bottom: 2px solid $headerColor;
+        padding-bottom: 30px;
+
+        .logo {
+            gap: 20px;
+            margin-bottom: 20px;
+
+            &_icon {
+                height: 65.5px;
+                width: 63px;
+            }
+        }
+
+        &-nav {
+            gap: 10px 0;
+
+            &_link {
+                width: 50%;
+
+                .link {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 0 10px;
+                    transition: .4s ease-in-out;
+
+                    .icon {
+                        font-size: 20px;
+                        transition: .4s ease-in-out;
+                    }
+
+                    &:hover, &:focus {
+                        color: $primary;
+
+                        .icon {
+                            color: $primary;
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &_bottom {
+        padding-top: 30px;
+
+        &-contacts {
+            margin-bottom: 30px;
+            font-weight: 700;
+            gap: 10px 0;
+
+            .link {
+                position: relative;
+                width: fit-content;
+
+                &:after {
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    background: $bodyText;
+                    position: absolute;
+                    bottom: 5px;
+                    left: 0;
+                    transition: .3s ease-in-out;
+                }
+
+                &:hover, &:focus {
+                    color: $primary;
+
+                    &:after {
+                        background: $primary;
+                    }
+                }
+            }
+        }
+
+        &-socials {
+            max-width: 280px;
+            margin-bottom: 60px;
+        }
+    }
+
+    &_copyright {
+        font-weight: 600;
+        font-size: 12px;
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 575.98px) {
+    .footer {
+        &_top {
+            &-nav {
+                gap: 0 40px;
+
+                &_link {
+                    width: unset;
+                }
+            }
+        }
+
+        &_bottom {
+            &-socials {
+                max-width: unset;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .footer {
+        padding: 80px 0 15px;
+
+        &_top, &_bottom {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &_top {
+            align-items: center;
+
+            .logo {
+                margin-bottom: 0;
+            }
+
+            &-nav {
+                position: relative;
+                top: 5px;
+                gap: 0 40px;
+            }
+        }
+
+        &_bottom {
+            &-contacts {
+                margin-bottom: 0;
+                gap: 5px 0;
+            }
+
+            &-socials {
+                text-align: right;
+
+                .socials {
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .footer {
+        padding: 120px 0 15px;
+
+        &_top {
+            padding-bottom: 50px;
+
+            &-nav {
+                &_link {
+                    .link {
+                        .icon {
+                            font-size: 32px;
+                            position: relative;
+                            top: -4px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &_bottom {
+            padding-top: 50px;
+
+            &-socials {
+                .socials {
+                    gap: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1399.98px) {
+    .footer {
+        padding: 120px 0 20px;
+
+        &_scroll {
+            font-size: 64px;
+            bottom: 20px;
+        }
+
+        &_copyright {
+            text-align: right;
+            max-width: 1105px;
+        }
+
+        &_bottom {
+            &-socials {
+                margin-bottom: 80px;
+            }
+        }
+    }
+}

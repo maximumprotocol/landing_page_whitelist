@@ -1,0 +1,62 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// FAQ section
+
+.faq {
+    padding-top: 60px;
+
+    .accordion {
+        background: $lightgray;
+        padding: 30px;
+        box-shadow: $shadow;
+        border: $border;
+        border-radius: 2px;
+
+        &_item:last-of-type {
+            border-bottom: 0;
+
+            .title {
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 575.98px) {
+    .faq {
+        .accordion {
+            padding: 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .faq {
+        padding: 0;
+        .accordion {
+            margin-top: -50px;
+            position: relative;
+            z-index: 3;
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .faq {
+        .accordion {
+            padding: 40px 60px;
+        }
+    }
+}

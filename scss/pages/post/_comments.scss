@@ -1,0 +1,280 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// comments section
+
+.comments {
+    .avatar, .square {
+        border: $border;
+        box-shadow: 2px 2px 0 $primary;
+    }
+
+    .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        backface-visibility: hidden;
+    }
+
+    .square {
+        color: $headerColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+        transition: .4s ease-in-out;
+
+        &:hover {
+            box-shadow: 4px 4px 0 $primary;
+        }
+    }
+
+    &_header {
+        margin-bottom: 20px;
+
+        &-title {
+            color: $primary;
+            margin-bottom: 10px;
+        }
+
+        &-amount {
+            font-family: $headerFont;
+        }
+    }
+
+    &_panel {
+        margin-bottom: 30px;
+
+        &-auth {
+            margin-bottom: 20px;
+
+            .block {
+                &--info {
+                    margin-bottom: 20px;
+
+                    .username {
+                        color: $primary;
+                    }
+                }
+
+                &--action {
+                    gap: 0 10px;
+
+                    .group {
+                        font-weight: 700;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+
+        &-form {
+            .avatar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 24px;
+                color: #DCDCDC;
+                margin-bottom: 10px;
+            }
+
+            .field {
+                height: 140px;
+                margin: 10px 0;
+            }
+        }
+    }
+
+    &_list {
+        gap: 30px 0;
+
+        &-item {
+            border-bottom: 1px solid #D8D8D8;
+            padding-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+
+            &[data-reply="true"] {
+                margin-left: 30px;
+            }
+
+            .main {
+                width: calc(100% - 65px);
+
+                &_panel {
+                    margin: 10px 0;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    line-height: 1;
+                    font-weight: 600;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 10px;
+
+                    .group {
+                        display: flex;
+                        align-items: center;
+                        gap: 0 10px;
+                    }
+
+                    .icon-circle {
+                        font-size: 6px;
+                        position: relative;
+                        top: 1px;
+                    }
+
+                    &-divider {
+                        color: #919191;
+                    }
+
+                    &-name {
+                        color: $primary;
+                    }
+
+                    &-date {
+                        &:after {
+                            display: none;
+                        }
+                    }
+
+                    .menu {
+                        justify-self: flex-end;
+                        position: relative;
+
+                        &_trigger {
+                            display: inline-flex;
+                            gap: 0 10px;
+                            color: $primary;
+                        }
+
+                        &_action {
+                            position: absolute;
+                            background: #fff;
+                            border: $border;
+                            right: 0;
+                            top: 20px;
+                            font-size: 16px;
+                            text-align: center;
+                            text-transform: none;
+                            opacity: 0;
+                            visibility: hidden;
+                            z-index: -1;
+                            transition: .2s ease-in;
+
+                            &.visible {
+                                opacity: 1;
+                                visibility: visible;
+                                z-index: 1;
+                            }
+
+                            &-link {
+                                display: block;
+                                padding: 10px 20px;
+                                border-bottom: $border;
+
+                                &:last-of-type {
+                                    border: none;
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                &_content {
+                    &-comment {
+                        margin-bottom: 20px;
+                        max-width: 690px;
+                    }
+
+                    &-reply {
+                        display: flex;
+                        align-items: center;
+                        gap: 0 10px;
+                        line-height: 1;
+                        font-weight: 600;
+                        font-size: 12px;
+                        text-transform: uppercase;
+
+                        &:hover {
+                            .square {
+                                box-shadow: 4px 4px 0 $primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 575.98px) {
+    .comments {
+        &_header {
+            margin-bottom: 30px;
+
+            &-title {
+                margin-bottom: 0;
+            }
+        }
+
+        &_panel {
+            &-auth {
+                .block {
+                    &--info {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            &-form {
+                .avatar {
+                    margin-bottom: 0;
+                    margin-right: 20px;
+                }
+
+                .wrapper {
+                    flex-grow: 1;
+
+                    .field {
+                        height: 48px;
+                        margin: 0 5px 0 0;
+                        flex-grow: 1;
+                    }
+
+                    .btn {
+                        width: 48px;
+                    }
+                }
+            }
+        }
+
+        &_list {
+            &-item {
+                &[data-reply="true"] {
+                    margin-left: 80px;
+                }
+
+                .main {
+                    width: calc(100% - 80px);
+                }
+            }
+        }
+    }
+}

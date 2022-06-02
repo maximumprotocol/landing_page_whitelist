@@ -1,0 +1,163 @@
+/**
+ * Sitech
+ * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
+ * Exclusively on https://1.envato.market/sitech-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// challenge section common styles
+
+.challenges {
+    padding: 60px 0;
+
+    &_shapes {
+        display: none;
+    }
+
+    &_header {
+        margin-bottom: 30px;
+
+        &-title {
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            .text {
+                max-width: 200px;
+                margin-right: 60px;
+            }
+
+            .icon {
+                position: relative;
+                top: -10px;
+            }
+        }
+    }
+
+    &_list {
+        gap: 30px 0;
+
+        &-item {
+            .number {
+                background: $accent;
+                font-size: 14px;
+                width: 34px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: $headerFont;
+                color: $headerColor;
+            }
+
+            .separator {
+                display: block;
+                width: 100%;
+                height: 2px;
+                margin: 20px 0 10px;
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 575.98px) {
+    .challenges {
+        &_header {
+            &-title {
+                justify-content: flex-start;
+            }
+        }
+        &_list {
+            gap: 30px 40px;
+
+            &-item {
+                width: calc(50% - 20px);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .challenges {
+        padding: 100px 0;
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .challenges {
+        padding: 120px 0;
+
+        &_header {
+            margin-right: 80px;
+            margin-bottom: 0;
+
+            &-title {
+                .text {
+                    max-width: 290px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .challenges {
+        &_header {
+            margin-right: 100px;
+
+            &-title {
+                .text {
+                    margin-right: 120px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1399.98px) {
+    .challenges {
+        position: relative;
+
+        &_shapes {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+
+            .half {
+                width: 50%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+
+                &--left {
+                    left: 0;
+                }
+
+                &--right {
+                    right: 0;
+                }
+
+                .circle {
+                    position: absolute;
+                    border-radius: 50%;
+                    display: block;
+                }
+            }
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+        }
+    }
+}
