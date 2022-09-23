@@ -92,7 +92,7 @@ export function drawNav() {
                     <form class="signup_popup-form form d-flex flex-column" action="#" method="post" data-type="signup">
                         <input class="field required" type="text" placeholder="Name">
                         <input class="field required" type="text" data-type="email" placeholder="E-mail">
-                         
+                        <input class="field required" type="text" data-type="phoneNumber" placeholder="Phone Number">
                         <div class="">
                             <input type="checkbox" name="sendDemoCheck" id="sendDemoCheck" checked>
                             <label for="sendDemoCheck">
